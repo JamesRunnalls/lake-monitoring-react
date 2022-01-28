@@ -1,0 +1,4 @@
+{
+    "apiUrl":"https://api.meteolakes.ch",
+    "apiUrls":"http://localhost:8000"
+}
