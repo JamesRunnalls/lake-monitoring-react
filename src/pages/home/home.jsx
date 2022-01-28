@@ -93,6 +93,7 @@ class Home extends Component {
     for (var lake of Object.keys(metadata)) {
       var location = L.latLng(metadata[lake].lat, metadata[lake].lng);
       var marker = new L.marker(location, {
+        id: lake,
         icon: L.divIcon({
           className: "map-marker",
           html:
@@ -103,8 +104,8 @@ class Home extends Component {
       }).addTo(this.map);
 
       marker.bindTooltip(metadata[lake].name);
-      marker.on("click", () => {
-        window.location.href = "/data?" + lake;
+      marker.on("click", (event) => {
+        window.location.href = "/data?" + event.target.options.id;
       });
     }
     window.addEventListener("resize", this.updateMap, false);
