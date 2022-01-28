@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import WheelPicker from "react-wheelpicker";
 import L from "leaflet";
+import metadata from "./../../metadata.json";
 import "./css/leaflet.css";
 import "../../App.css";
+import Wheel from "../../components/wheel/wheel";
 
 class Home extends Component {
   state = {
@@ -67,18 +68,9 @@ class Home extends Component {
         "Responsible technician",
       ],
     },
-    lakes: [
-      { name: "Inkwilersee", lat: 47.198, lng: 7.663 },
-      { name: "Geistsee", lat: 46.76138, lng: 7.53506 },
-      { name: "Stockseewli", lat: 46.60024, lng: 8.32468 },
-      { name: "Meiefallseeli", lat: 47.398, lng: 7.663 },
-      { name: "Weiherhus", lat: 46.76138, lng: 7.43506 },
-      { name: "Oberes Banzlouwiseeli", lat: 46.50024, lng: 8.12468 },
-    ],
   };
 
   async componentDidMount() {
-    var { lakes } = this.state;
     var southWest = L.latLng(45.4, 5.14);
     var northEast = L.latLng(48.23, 11.48);
     var bounds = L.latLngBounds(southWest, northEast);
@@ -98,28 +90,41 @@ class Home extends Component {
           '<a title="Swiss Federal Office of Topography" href="https://www.swisstopo.admin.ch/">swisstopo</a>',
       }
     ).addTo(this.map);
-    for (var lake of lakes) {
-      var location = L.latLng(lake.lat, lake.lng);
+    for (var lake of Object.keys(metadata)) {
+      var location = L.latLng(metadata[lake].lat, metadata[lake].lng);
       var marker = new L.marker(location, {
         icon: L.divIcon({
           className: "map-marker",
           html:
             `<div style="padding:10px;transform:translate(2px, -21px);position: absolute;">` +
-            `<div style="position: absolute;top:-35px;left:-45px;font-size:20px;color:black;text-align:center;">${lake.name}</div>` +
             `<div class="pin bounce" style="background-color:black" />` +
-            `<div class="pulse" id="${"pulse_" + lake.name}" /></div> `,
+            `<div class="pulse" id="${"pulse-" + lake}" /></div> `,
         }),
       }).addTo(this.map);
 
-      marker.on("mouseover", () => {
-        console.log(lake.name);
-      });
+      marker.bindTooltip(metadata[lake].name);
       marker.on("click", () => {
-        console.log("Link to lake");
+        window.location.href = "/data?" + lake;
       });
     }
     window.addEventListener("resize", this.updateMap, false);
   }
+
+  onMouseOver = (event) => {
+    try {
+      document.getElementById(
+        "pulse-" + event.target.id.split("-")[1]
+      ).style.display = "block";
+    } catch (e) {}
+  };
+
+  onMouseOut = (event) => {
+    try {
+      document.getElementById(
+        "pulse-" + event.target.id.split("-")[1]
+      ).style.display = "none";
+    } catch (e) {}
+  };
 
   updateMap = () => {
     this.map.invalidateSize();
@@ -130,10 +135,12 @@ class Home extends Component {
   }
 
   render() {
-    document.title = "Temperaturmonitoring in Kleinseen";
-    var { title, subtitle, text, people, lakes } = this.state;
+    var { title, subtitle, text, people } = this.state;
     var { lang } = this.props;
-    var lakes_arr = lakes.map((lake) => lake.name);
+    document.title = title[lang];
+    var items = Object.keys(metadata).map((lake) => {
+      return { value: metadata[lake].name, link: "/data?" + lake, key: lake };
+    });
     return (
       <div className="home">
         <div className="content">
@@ -142,14 +149,10 @@ class Home extends Component {
             <div className="subtitle">{subtitle[lang]}</div>
           </div>
           <div className="select">
-            <WheelPicker
-              animation="flat"
-              data={lakes_arr}
-              height={60}
-              parentHeight={250}
-              fontSize={22}
-              defaultSelection={Math.round(lakes_arr.length / 2)}
-              scrollerId="scroll-select-subject"
+            <Wheel
+              items={items}
+              onMouseOver={this.onMouseOver}
+              onMouseOut={this.onMouseOut}
             />
           </div>
           <div className="text">{text[lang]}</div>

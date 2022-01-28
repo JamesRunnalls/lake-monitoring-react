@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/header";
 import Home from "./pages/home/home";
+import Data from "./pages/data/data";
 import NotFound from "./pages/notfound/notfound";
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
           <Routes>
             <Route path="*" element={<NotFound lang={lang} />} />
             <Route path="/" exact element={<Home lang={lang} />} />
+            <Route path="/data" element={<Data lang={lang} />} />
           </Routes>
         </BrowserRouter>
       </React.Fragment>
