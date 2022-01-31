@@ -8,11 +8,7 @@ class Header extends Component {
     var { lang, langs, updateLangs } = this.props;
     return (
       <div className="header">
-        <div className="header-bar"></div>
         <div className="header-content">
-          <div className="header-home">
-            
-          </div>
           <div className="header-logos">
             <img src={eawag} alt="eawag" />
             <img src={bafu} alt="bafu"/>

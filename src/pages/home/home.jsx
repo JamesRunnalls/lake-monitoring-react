@@ -3,7 +3,7 @@ import L from "leaflet";
 import metadata from "./../../metadata.json";
 import "./css/leaflet.css";
 import "../../App.css";
-import Wheel from "../../components/wheel/wheel";
+import List from "../../components/list/list";
 
 class Home extends Component {
   state = {
@@ -74,6 +74,17 @@ class Home extends Component {
     var southWest = L.latLng(45.4, 5.14);
     var northEast = L.latLng(48.23, 11.48);
     var bounds = L.latLngBounds(southWest, northEast);
+    var lat = [];
+    var lng = [];
+    for (let lake of Object.keys(metadata)) {
+      lat.push(metadata[lake].lat);
+      lng.push(metadata[lake].lng);
+    }
+    var points = L.latLngBounds(
+      L.latLng(Math.min(...lat), Math.min(...lng)),
+      L.latLng(Math.max(...lat), Math.max(...lng))
+    );
+
     this.map = L.map("map", {
       preferCanvas: true,
       zoomControl: false,
@@ -83,6 +94,7 @@ class Home extends Component {
       maxBounds: bounds,
       maxBoundsViscosity: 1.0,
     });
+    this.map.fitBounds(points);
     L.tileLayer(
       "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg",
       {
@@ -98,8 +110,10 @@ class Home extends Component {
           className: "map-marker",
           html:
             `<div style="padding:10px;transform:translate(2px, -21px);position: absolute;">` +
-            `<div class="pin bounce" style="background-color:black" />` +
-            `<div class="pulse" id="${"pulse-" + lake}" /></div> `,
+            `<div class="pin bounce" id="${
+              "pin-" + lake
+            }" style="background-color:#044E54" />` +
+            `</div> `,
         }),
       }).addTo(this.map);
 
@@ -114,21 +128,27 @@ class Home extends Component {
   onMouseOver = (event) => {
     try {
       document.getElementById(
-        "pulse-" + event.target.id.split("-")[1]
-      ).style.display = "block";
-    } catch (e) {}
+        "pin-" + event.target.id.split("-")[1]
+      ).style.backgroundColor = "#54D1DB";
+    } catch (e) {
+      console.log();
+    }
   };
 
   onMouseOut = (event) => {
     try {
       document.getElementById(
-        "pulse-" + event.target.id.split("-")[1]
-      ).style.display = "none";
+        "pin-" + event.target.id.split("-")[1]
+      ).style.backgroundColor = "#044E54";
     } catch (e) {}
   };
 
   updateMap = () => {
     this.map.invalidateSize();
+    var map = this.map;
+    setTimeout(function () {
+      map.invalidateSize();
+    }, 400);
   };
 
   componentWillUnmount() {
@@ -150,7 +170,7 @@ class Home extends Component {
             <div className="subtitle">{subtitle[lang]}</div>
           </div>
           <div className="select">
-            <Wheel
+            <List
               items={items}
               onMouseOver={this.onMouseOver}
               onMouseOut={this.onMouseOut}
@@ -171,14 +191,14 @@ class Home extends Component {
                 <tr>
                   <th>{people[lang][2]}</th>
                   <td>
-                    Fabian Bärenbold <br />
+                    <b>Fabian Bärenbold</b> <br />
                     {people[lang][3]}
                     <br />
                     058 765 21 77
                     <br /> fabian.baerenbold@eawag.ch
                     <p>
                       {" "}
-                      Michael Plüss
+                      <b>Michael Plüss</b>
                       <br />
                       {people[lang][4]}
                       <br /> 058 765 22 55

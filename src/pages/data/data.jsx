@@ -82,14 +82,14 @@ class Data extends Component {
                   <tr>
                     <th>{people[lang][2]}</th>
                     <td>
-                      Fabian Bärenbold <br />
+                      <b>Fabian Bärenbold</b> <br />
                       {people[lang][3]}
                       <br />
                       058 765 21 77
                       <br /> fabian.baerenbold@eawag.ch
                       <p>
                         {" "}
-                        Michael Plüss
+                        <b>Michael Plüss </b>
                         <br />
                         {people[lang][4]}
                         <br /> 058 765 22 55
