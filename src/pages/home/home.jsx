@@ -7,66 +7,61 @@ import List from "../../components/list/list";
 
 class Home extends Component {
   state = {
-    title: {
-      DE: "Pilotprojekt Temperaturmonitoring in Kleinseen",
-      EN: "Temperature Monitoring Pilot Project in Small Lakes",
-    },
-    subtitle: {
-      DE: "See auswählen",
-      EN: "Select lake",
-    },
     text: {
-      DE: (
-        <div>
-          <p>
-            Das Wasserforschungsinstitut Eawag betreibt von 2021 bis 2023
-            Pilot-Stationen für Temperaturmessungen in verschiedenen Schweizer
-            Kleinseen. Die Messketten bestehen aus einem Metallgewicht am Grund,
-            einer Boje an der Wasseroberfläche und Sensoren in verschiedenen
-            Wassertiefen.{" "}
-          </p>
-          <p>
-            Ziel der Messungen ist es, die Eignung der Sensoren sowie der
-            Installation zu testen, um in Zukunft die klimabedingte
-            Temperaturdynamik in Kleinseen und Weihern zu beobachten. Die
-            Resultate dienen der Abklärung zur Entwicklung eines schweizweiten
-            Messnetzes für See-Temperaturen.
-          </p>
-        </div>
-      ),
-      EN: (
-        <div>
-          <p>
-            The water research institute Eawag will operate pilot stations for
-            temperature measurements in various small Swiss lakes from 2021 to
-            2023. The measuring chains consist of a metal weight on the bottom,
-            a buoy on the water surface and sensors at different water depths.
-          </p>
-          <p>
-            The aim of the measurements is to test the suitability of the
-            sensors and the installation in order to observe the climate-related
-            temperature dynamics in small lakes and ponds in the future. The
-            results serve to clarify the development of a Switzerland-wide
-            measuring network for lake temperatures.
-          </p>
-        </div>
-      ),
-    },
-    people: {
-      DE: [
-        "Betreiber",
-        "Auftraggeber",
-        "Kontact",
-        "Wissenschaftlicher Betreuer des Projekts",
-        "Verantwortlicher Techniker",
-      ],
-      EN: [
-        "Operator",
-        "Client",
-        "Contact",
-        "Scientific supervisor of the project",
-        "Responsible technician",
-      ],
+      DE: {
+        title: "Pilotprojekt Temperaturmonitoring in Kleinseen",
+        subtitle: "See auswählen",
+        intro: (
+          <div>
+            <p>
+              Das Wasserforschungsinstitut Eawag betreibt von 2021 bis 2023
+              Pilot-Stationen für Temperaturmessungen in verschiedenen Schweizer
+              Kleinseen. Die Messketten bestehen aus einem Metallgewicht am
+              Grund, einer Boje an der Wasseroberfläche und Sensoren in
+              verschiedenen Wassertiefen.
+            </p>
+            <p>
+              Ziel der Messungen ist es, die Eignung der Sensoren sowie der
+              Installation zu testen, um in Zukunft die klimabedingte
+              Temperaturdynamik in Kleinseen und Weihern zu beobachten. Die
+              Resultate dienen der Abklärung zur Entwicklung eines schweizweiten
+              Messnetzes für See-Temperaturen.
+            </p>
+          </div>
+        ),
+        job1: "Wissenschaftlicher Betreuer des Projekts",
+        job2: "Verantwortlicher Techniker",
+        operator: "Betreiber",
+        client: "Auftraggeber",
+        contact: "Kontact",
+      },
+      EN: {
+        title: "Temperature Monitoring Pilot Project in Small Lakes",
+        subtitle: "Select lake",
+        intro: (
+          <div>
+            <p>
+              The water research institute Eawag will operate pilot stations for
+              temperature measurements in various small Swiss lakes from 2021 to
+              2023. The measuring chains consist of a metal weight on the
+              bottom, a buoy on the water surface and sensors at different water
+              depths.
+            </p>
+            <p>
+              The aim of the measurements is to test the suitability of the
+              sensors and the installation in order to observe the
+              climate-related temperature dynamics in small lakes and ponds in
+              the future. The results serve to clarify the development of a
+              Switzerland-wide measuring network for lake temperatures.
+            </p>
+          </div>
+        ),
+        job1: "Scientific Supervisor of the Project",
+        job2: "Responsible technician",
+        operator: "Operator",
+        client: "Client",
+        contact: "Contact",
+      },
     },
   };
 
@@ -145,10 +140,6 @@ class Home extends Component {
 
   updateMap = () => {
     this.map.invalidateSize();
-    var map = this.map;
-    setTimeout(function () {
-      map.invalidateSize();
-    }, 400);
   };
 
   componentWillUnmount() {
@@ -156,9 +147,9 @@ class Home extends Component {
   }
 
   render() {
-    var { title, subtitle, text, people } = this.state;
+    var { text } = this.state;
     var { lang } = this.props;
-    document.title = title[lang];
+    document.title = text[lang].title;
     var items = Object.keys(metadata).map((lake) => {
       return { value: metadata[lake].name, link: "/data?" + lake, key: lake };
     });
@@ -166,8 +157,8 @@ class Home extends Component {
       <div className="home">
         <div className="content">
           <div className="title">
-            {title[lang]}
-            <div className="subtitle">{subtitle[lang]}</div>
+            {text[lang].title}
+            <div className="subtitle">{text[lang].subtitle}</div>
           </div>
           <div className="select">
             <List
@@ -176,23 +167,23 @@ class Home extends Component {
               onMouseOut={this.onMouseOut}
             />
           </div>
-          <div className="text">{text[lang]}</div>
+          <div className="text">{text[lang].intro}</div>
           <div className="people">
             <table>
               <tbody>
                 <tr>
-                  <th>{people[lang][0]}</th>
+                  <th>{text[lang].operator}</th>
                   <td>Eawag, Wasserforschungsinstitut des ETH-Bereichs</td>
                 </tr>
                 <tr>
-                  <th>{people[lang][1]}</th>
+                  <th>{text[lang].client}</th>
                   <td>Bundesamt für Umwelt</td>
                 </tr>
                 <tr>
-                  <th>{people[lang][2]}</th>
+                  <th>{text[lang].contact}</th>
                   <td>
                     <b>Fabian Bärenbold</b> <br />
-                    {people[lang][3]}
+                    {text[lang].job1}
                     <br />
                     058 765 21 77
                     <br /> fabian.baerenbold@eawag.ch
@@ -200,7 +191,7 @@ class Home extends Component {
                       {" "}
                       <b>Michael Plüss</b>
                       <br />
-                      {people[lang][4]}
+                      {text[lang].job2}
                       <br /> 058 765 22 55
                       <br />
                       michael.pluess@eawag.ch

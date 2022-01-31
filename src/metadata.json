@@ -19,7 +19,7 @@
             "m"
         ],
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/843?iframe&bafu&axis:[x,y3]",
-        "heatmap": "https://www.datalakes-eawag.ch/datadetail/843?iframe&bafu",
+        "heatmap": "https://www.datalakes-eawag.ch/datadetail/843?iframe&bafu&axis:[x,y,z]",
         "text": {
             "DE": "Im Verlauf der bisherigen Messperiode (April bis September 2021) erreichte der Inkwilersee Mitte Juni eine Maximaltemperatur von knapp 28 °C. Danach waren die Temperaturen über den Sommer etwas niedriger und bewegten sich meist zwischen 15 und 25°C. Der Inkwilersee ist im Sommer normalerweise stabil geschichtet mit wärmeren Temperaturen an der Oberfläche und kühleren am Grund. Während des Unwetters vom 12. auf den 13. Juli kühlte die Oberfläche jedoch stark ab und der Inkwilersee mischte bis ungefähr zur halben Tiefe. Dadurch gelangte Sauerstoff ins Tiefenwasser, der jedoch durch Bakterien und Algen schnell wieder aufgezehrt wurde.",
             "EN": "In the course of the measurement period to date (April to September 2021), Lake Inkwil reached a maximum temperature of almost 28 °C in mid-June. After that, the temperatures were a little lower over the summer and mostly ranged between 15 and 25°C. The Inkwilersee is usually stable in summer with warmer temperatures on the surface and cooler ones at the bottom. However, during the storm on July 12/13, the surface cooled down considerably and the Inkwilersee mixed up to about half its depth. This allowed oxygen to get into the deep water, but it was quickly consumed again by bacteria and algae."
@@ -44,10 +44,11 @@
             "660",
             "m"
         ],
-        "linegraph": "https://www.datalakes-eawag.ch/datadetail/842?iframe&bafu&axis:[x,y3]",
-        "heatmap": "https://www.datalakes-eawag.ch/datadetail/842?iframe&bafu",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/842?iframe&bafu&axis:[x,y1]",
+        "heatmap": "https://www.datalakes-eawag.ch/datadetail/842?iframe&bafu&axis:[x,y,z]",
         "text": {
-            "DE": "In der bisherigen Messperiode (April – September 2021) erreichte der Geistsee die Maximaltemperatur von ungefähr 26 °C Mitte Juni. Danach waren die Temperaturen aufgrund des wechselhaften und überaus regenreichen Sommers nicht mehr ganz so hoch. Der Geistsee war, trotz seiner geringen Tiefe, den ganzen Sommer 2021 stabil geschichtet, d.h. das Wasser unterhalb von etwa 3-4 m mischt nicht mit dem Oberflächenwasser und bleibt kühl. Das stärkste Mischereignis gab es vom 12.-14. Juli, welches von einem starken Sturm ausgelöst wurde."
+            "DE": "In der bisherigen Messperiode (April – September 2021) erreichte der Geistsee die Maximaltemperatur von ungefähr 26 °C Mitte Juni. Danach waren die Temperaturen aufgrund des wechselhaften und überaus regenreichen Sommers nicht mehr ganz so hoch. Der Geistsee war, trotz seiner geringen Tiefe, den ganzen Sommer 2021 stabil geschichtet, d.h. das Wasser unterhalb von etwa 3-4 m mischt nicht mit dem Oberflächenwasser und bleibt kühl. Das stärkste Mischereignis gab es vom 12.-14. Juli, welches von einem starken Sturm ausgelöst wurde.",
+            "EN": "In the previous measurement period (April - September 2021), the Geistsee reached its maximum temperature of around 26 °C in mid-June. After that, the temperatures were not quite as high due to the changeable and extremely rainy summer. Despite its shallow depth, the Geistsee was stratified throughout the summer of 2021, i.e. the water below about 3-4 m does not mix with the surface water and remains cool. The strongest mixed event was from 12.-14. July, which was triggered by a strong storm."
         }
     },
     "lenkerseeli": {
@@ -69,15 +70,16 @@
             "1065",
             "m"
         ],
-        "linegraph": "https://www.datalakes-eawag.ch/datadetail/844?iframe&bafu&axis:[x,y3]",
-        "heatmap": "https://www.datalakes-eawag.ch/datadetail/844?iframe&bafu",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/844?iframe&bafu&axis:[x,y1]",
+        "heatmap": "https://www.datalakes-eawag.ch/datadetail/844?iframe&bafu&axis:[x,y,z]",
         "text": {
-            "DE": "Die Oberflächentemperatur des Lenkerseelis erreichte Mitte Juni ihr Maximum von ungefähr 20 °C. Im Juli und August blieben die Temperaturen wegen des eher durchzogenen Sommerwetters eher im Bereich von 10 – 15 °C. Trotz der geringen Tiefe ist das Lenkerseeli ab Anfang Juni bis mindestens Ende August durchgehend stabil geschichtet. Das wärmere Wasser befindet sich oben und das kältere, schwerere unten. Dies bedeutet, dass der Sauerstoffgehalt im unteren Teils des Lenkerseelis wohl über den Sommer stark abnimmt. Messungen dazu werden aber erst nächstes Jahr vorhanden sein."
+            "DE": "Die Oberflächentemperatur des Lenkerseelis erreichte Mitte Juni ihr Maximum von ungefähr 20 °C. Im Juli und August blieben die Temperaturen wegen des eher durchzogenen Sommerwetters eher im Bereich von 10 – 15 °C. Trotz der geringen Tiefe ist das Lenkerseeli ab Anfang Juni bis mindestens Ende August durchgehend stabil geschichtet. Das wärmere Wasser befindet sich oben und das kältere, schwerere unten. Dies bedeutet, dass der Sauerstoffgehalt im unteren Teils des Lenkerseelis wohl über den Sommer stark abnimmt. Messungen dazu werden aber erst nächstes Jahr vorhanden sein.",
+            "EN": "The surface temperature of the Lenkerseeli reached its maximum of around 20 °C in mid-June. In July and August, the temperatures tended to stay in the range of 10 – 15 °C due to the rather mixed summer weather. Despite the shallow depth, the Lenkerseeli is stratified from the beginning of June until at least the end of August. The warmer water is at the top and the colder, heavier water is at the bottom. This means that the oxygen content in the lower part of the Lenkerseeli probably decreases significantly over the summer. However, measurements on this will not be available until next year."
         }
     },
     "stockseewli": {
         "name": "Stockseewli",
-        "lat": 46.60024, 
+        "lat": 46.60024,
         "lng": 8.32468,
         "location": [
             "667’895 / 167’380"
@@ -94,16 +96,17 @@
             "1620",
             "m"
         ],
-        "linegraph": "https://www.datalakes-eawag.ch/datadetail/856?iframe&bafu&axis:[x,y3]",
-        "heatmap": "https://www.datalakes-eawag.ch/datadetail/856?iframe&bafu",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/856?iframe&bafu&axis:[x,y1]",
+        "heatmap": "https://www.datalakes-eawag.ch/datadetail/856?iframe&bafu&axis:[x,y,z]",
         "text": {
-            "DE": "In der bisherigen Messperiode (Juli bis September 2021) erreichte das Stockseewli aufgrund der eher niedrigen Sommertemperaturen nie eine Temperatur von über 15°C. Trotz der geringen Tiefe besteht im Stockseewli auch im Sommer meist eine gewisse Schichtung mit wärmerem, leichterem Wasser an der Oberfläche und leicht kühlerem am Grund. Grössere Mischereignisse fanden Ende August und Mitte September statt."
+            "DE": "In der bisherigen Messperiode (Juli bis September 2021) erreichte das Stockseewli aufgrund der eher niedrigen Sommertemperaturen nie eine Temperatur von über 15°C. Trotz der geringen Tiefe besteht im Stockseewli auch im Sommer meist eine gewisse Schichtung mit wärmerem, leichterem Wasser an der Oberfläche und leicht kühlerem am Grund. Grössere Mischereignisse fanden Ende August und Mitte September statt.",
+            "EN": "In the previous measurement period (July to September 2021), the Stockseewli never reached a temperature of over 15°C due to the rather low summer temperatures. Despite the shallow depth, there is usually a certain layering in the Stockseewli, with warmer, lighter water on the surface and slightly cooler water on the bottom, even in summer. Larger mixed events took place in late August and mid-September."
         }
     },
     "oberesbanzlauiseeli": {
         "name": "Oberes Bänzlauiseeli",
-        "lat": 46.50024,
-        "lng": 8.12468,
+        "lat": 46.68965,
+        "lng": 8.287698,
         "location": [
             "664’830 / 171’640"
         ],
@@ -119,15 +122,16 @@
             "2216",
             "m"
         ],
-        "linegraph": "https://www.datalakes-eawag.ch/datadetail/845?iframe&bafu&axis:[x,y3]",
-        "heatmap": "https://www.datalakes-eawag.ch/datadetail/845?iframe&bafu",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/845?iframe&bafu&axis:[x,y1]",
+        "heatmap": "https://www.datalakes-eawag.ch/datadetail/845?iframe&bafu&axis:[x,y,z]",
         "text": {
-            "DE": "Bei der Einsetzung der Messkette war das Seeli noch grösstenteils mit Schnee und Eis bedeckt und die Temperaturschichtung daher invers. Bis Ende August erreichte die Temperatur dann Maximalwerte von bis zu 15 °C. Wohl aufgrund des sehr klaren Wassers, welches der Sonnenstrahlung erlaubt bis an den Seegrund vorzudringen, mischt das obere Bänzlauiseeli auch im Sommer regelmässig bis an den Grund."
+            "DE": "Bei der Einsetzung der Messkette war das Seeli noch grösstenteils mit Schnee und Eis bedeckt und die Temperaturschichtung daher invers. Bis Ende August erreichte die Temperatur dann Maximalwerte von bis zu 15 °C. Wohl aufgrund des sehr klaren Wassers, welches der Sonnenstrahlung erlaubt bis an den Seegrund vorzudringen, mischt das obere Bänzlauiseeli auch im Sommer regelmässig bis an den Grund.",
+            "EN": "When the measuring chain was installed, the Seeli was still mostly covered with snow and ice and the temperature stratification was therefore inverse. By the end of August, the temperature then reached maximum values of up to 15 °C. Probably due to the very clear water, which allows the sun's rays to penetrate to the bottom of the lake, the upper Bänzlauiseeli regularly shimmers down to the bottom even in summer."
         }
     },
     "waldweiher": {
         "name": "Waldweiher",
-        "lat": 47.27937, 
+        "lat": 47.27937,
         "lng": 8.557338,
         "location": [
             "600’290 / 144’160"
@@ -144,16 +148,17 @@
             "553",
             "m"
         ],
-        "linegraph": "https://www.datalakes-eawag.ch/datadetail/846?iframe&bafu&axis:[x,y3]",
-        "heatmap": "https://www.datalakes-eawag.ch/datadetail/846?iframe&bafu",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/846?iframe&bafu&axis:[x,y1]",
+        "heatmap": "https://www.datalakes-eawag.ch/datadetail/846?iframe&bafu&axis:[x,y,z]",
         "text": {
-            "DE": "Die Oberfläche des Waldweihers erreichte Mitte Juni eine Maximaltemperatur von ungefähr 25 °C. Danach war das Wasser aufgrund des durchzogenen Sommerwetters wieder deutlich kühler (15 – 20 °C). Wegen der geringen Tiefe und des eher kühlen Wetters mischte der Waldweiher während des Sommers regelmässig durch, er ist also sogenannt «polymiktisch»."
+            "DE": "Die Oberfläche des Waldweihers erreichte Mitte Juni eine Maximaltemperatur von ungefähr 25 °C. Danach war das Wasser aufgrund des durchzogenen Sommerwetters wieder deutlich kühler (15 – 20 °C). Wegen der geringen Tiefe und des eher kühlen Wetters mischte der Waldweiher während des Sommers regelmässig durch, er ist also sogenannt polymiktisch.",
+            "EN": "The surface of the forest pond reached a maximum temperature of around 25 °C in mid-June. After that, the water was significantly cooler again (15 – 20 °C) due to the mixed summer weather. Due to the shallow depth and the rather cool weather, the forest pond mixed regularly during the summer, so it is so-called polymictic."
         }
     },
     "weiherhus": {
         "name": "Weiherhus",
-        "lat": 46.76138,
-        "lng": 7.43506,
+        "lat": 47.040965,
+        "lng": 8.219020,
         "location": [
             "659’310 / 210’290"
         ],
@@ -169,10 +174,11 @@
             "475",
             "m"
         ],
-        "linegraph": "https://www.datalakes-eawag.ch/datadetail/847?iframe&bafu&axis:[x,y3]",
-        "heatmap": "https://www.datalakes-eawag.ch/datadetail/847?iframe&bafu",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/847?iframe&bafu&axis:[x,y1]",
+        "heatmap": "https://www.datalakes-eawag.ch/datadetail/847?iframe&bafu&axis:[x,y,z]",
         "text": {
-            "DE": "Die Temperatur im Weiherhus-Weiher erreicht ihr im Jahr 2022 ihr jährliches Maximum Mitte Juni mit etwa 23 °C. Danach schwankte die Temperatur an der Oberfläche um 20 °C, was vor allem durch das eher kühle Sommerwetter ausgelöst wurde. Trotz der geringen Tiefe von 2 m mischte der Weiher im Sommer nie bis an den Grund durch. D.h. dass das kühle Wasser unterhalb von 1-1.5 m nie mit der Atmosphäre in Kontakt kam und dadurch das Sauerstoffreservoir nicht aufgefüllt werden konnte. Die meisten partiellen Mischereignisse (bis ca. 1.5 m Tiefe) gab es Ende Juni bis Mitte Juli, ausgelöst durch kühles Wetter und starke Winde."
+            "DE": "Die Temperatur im Weiherhus-Weiher erreicht ihr im Jahr 2022 ihr jährliches Maximum Mitte Juni mit etwa 23 °C. Danach schwankte die Temperatur an der Oberfläche um 20 °C, was vor allem durch das eher kühle Sommerwetter ausgelöst wurde. Trotz der geringen Tiefe von 2 m mischte der Weiher im Sommer nie bis an den Grund durch. D.h. dass das kühle Wasser unterhalb von 1-1.5 m nie mit der Atmosphäre in Kontakt kam und dadurch das Sauerstoffreservoir nicht aufgefüllt werden konnte. Die meisten partiellen Mischereignisse (bis ca. 1.5 m Tiefe) gab es Ende Juni bis Mitte Juli, ausgelöst durch kühles Wetter und starke Winde.",
+            "EN": "The temperature in the Weiherhus pond will reach its annual maximum in mid-June 2022 at around 23 °C. After that, the temperature on the surface fluctuated by 20 °C, which was mainly caused by the rather cool summer weather. Despite the shallow depth of 2 m, the pond never mixed all the way to the bottom in summer. This means that the cool water below 1-1.5 m never came into contact with the atmosphere and therefore the oxygen reservoir could not be filled. Most partial mixed events (to about 1.5 m depth) occurred in late June to mid-July, triggered by cool weather and strong winds."
         }
     }
 }
