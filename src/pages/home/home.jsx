@@ -18,7 +18,7 @@ class Home extends Component {
               Pilot-Stationen für Temperaturmessungen in verschiedenen Schweizer
               Kleinseen. Die Messketten bestehen aus einem Metallgewicht am
               Grund, einer Boje an der Wasseroberfläche und Sensoren in
-              verschiedenen Wassertiefen. Die Temperaturdaten werden zweimal pro Jahr manuell ausgelesen und auf der Webseite aufgeschalten.
+              verschiedenen Wassertiefen. Die Temperaturdaten werden zweimal pro Jahr manuell ausgelesen und auf der Webseite aufgeschaltet.
             </p>
             <p>
               Ziel der Messungen ist es, die Eignung der Sensoren sowie der
@@ -35,6 +35,8 @@ class Home extends Component {
         operator: "Betreiber",
         client: "Auftraggeber",
         contact: "Kontakt",
+        eawag: "Eawag, Eidgenössische Anstalt für Wasserversorgung, Abwasserreinigung und Gewässerschutz",
+        bafu: "BAFU, Bundesamt für Umwelt",
       },
       EN: {
         title: "Temperature Monitoring Pilot Project in Small Lakes",
@@ -63,6 +65,8 @@ class Home extends Component {
         operator: "Operator",
         client: "Client",
         contact: "Contact",
+        eawag: "Eawag, Swiss Federal Institute for Aquatic Science and Technology",
+        bafu: "FOEN, Swiss Federal Office for the Environment"
       },
       IT: {
         title:
@@ -92,6 +96,8 @@ class Home extends Component {
         operator: "Operatore",
         client: "Cliente",
         contact: "Contatto",
+        eawag: "Eawag, Istituto federale per l'approvvigionamento, la depurazione e la protezione delle acque"
+        bafu: "UFAM, Ufficio federale dell’ambiente"
       },
       FR: {
         title:
@@ -121,6 +127,8 @@ class Home extends Component {
         operator: "Opérateur",
         client: "Client",
         contact: "Contact",
+        eawag: "Eawag, Institut fédéral pour l'aménagement, l'épuration et la protection des eaux"
+        bafu: "OFEV, Office fédéral de l’environnement"
       },
     },
   };
@@ -254,36 +262,42 @@ class Home extends Component {
               <tbody>
                 <tr>
                   <th>{text[lang].operator}</th>
-                  <td>Eawag, Wasserforschungsinstitut des ETH-Bereichs</td>
+                  <td>{text[lang].eawag</td>
                 </tr>
                 <tr>
                   <th>{text[lang].client}</th>
-                  <td>Bundesamt für Umwelt</td>
+                  <td>{text[lang].bafu}</td>
                 </tr>
                 <tr>
                   <th>{text[lang].contact}</th>
                   <td>
-                    {text[lang].job1}
-                    <b>Fabian Bärenbold</b> <br />
-                    <br />
-                    058 765 21 77
+                    </b>{text[lang].job1}</b>
+                    Fabian Bärenbold
+                    <br /> 058 765 21 77
                     <br /> fabian.baerenbold@eawag.ch
                     <p>
                       {" "}
-                      {text[lang].job2}
-                      <b>Michael Plüss</b>
+                      </b>{text[lang].job2}</b>
+                      Michael Plüss
                       <br />
                       <br /> 058 765 22 55
                       <br />
                       michael.pluess@eawag.ch
                     <p>
                       {" "}
-                      {text[lang].job3}
-                      <b>Martin Schmid</b>
+                      </b>{text[lang].job3}</b>
+                      Martin Schmid
                       <br />
                       <br /> 058 765 21 93
                       <br />
                       martin.schmid@eawag.ch
+                    <p>
+                      {" "}
+                      Damien Bouffard
+                      <br />
+                      <br /> 058 765 22 73
+                      <br />
+                      damien.bouffard@eawag.ch
                     </p>
                   </td>
                 </tr>
