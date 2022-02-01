@@ -19,6 +19,7 @@ class Data extends Component {
         interp: "Interpretation der Daten",
         linegraph: "Oberflächentemperatur",
         heatmap: "Wassertemperatur",
+        oxygen: "Sauerstoff",
         job1: "Wissenschaftlicher Betreuer des Projekts",
         job2: "Verantwortlicher Techniker",
         notfound: "See nicht gefunden!",
@@ -29,6 +30,7 @@ class Data extends Component {
         interp: "Data Interpretation",
         linegraph: "Surface Temperature",
         heatmap: "Water Temperature",
+        oxygen: "Oxygen",
         job1: "Scientific Supervisor of the Project",
         job2: "Responsible Technician",
         notfound: "Lake not found!",
@@ -39,6 +41,7 @@ class Data extends Component {
         interp: "Interpretazione dei Dati",
         linegraph: "Temperatura Superficiale",
         heatmap: "Temperatura dell'Acqua",
+        oxygen: "Ossigeno",
         job1: "Responsabile Scientifico del Progetto",
         job2: "Tecnico Responsabile",
         notfound: "Lago non trovato!",
@@ -49,6 +52,7 @@ class Data extends Component {
         interp: "Interprétation des Données",
         linegraph: "Température de Surface",
         heatmap: "Température de l'Eau",
+        oxygen: "Oxygène",
         job1: "Superviseur Scientifique du Projet",
         job2: "Technicien Responsable",
         notfound: "Lac introuvable!",
@@ -204,6 +208,24 @@ class Data extends Component {
                 <iframe src={metadata[name]["heatmap"]} title="Datalakes" />
               </div>
             </div>
+            {"oxygen" in metadata[name] && (
+              <div className="info-box">
+                <div className="info-box-header">
+                  {text[lang].oxygen}
+                  <a
+                    href={metadata[name]["oxygen"].split("?")[0]}
+                    target="_blank"
+                    title="View on Datalakes"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={datalakes} alt="Datalakes" />
+                  </a>
+                </div>
+                <div className="info-box-content">
+                  <iframe src={metadata[name]["oxygen"]} title="Datalakes" />
+                </div>
+              </div>
+            )}
           </div>
         </div>
       );
