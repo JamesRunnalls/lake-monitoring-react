@@ -33,7 +33,7 @@ class Home extends Component {
         job2: "Verantwortlicher Techniker",
         operator: "Betreiber",
         client: "Auftraggeber",
-        contact: "Kontact",
+        contact: "Kontakt",
       },
       EN: {
         title: "Temperature Monitoring Pilot Project in Small Lakes",
