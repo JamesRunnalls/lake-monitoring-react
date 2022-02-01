@@ -18,7 +18,7 @@ class Home extends Component {
               Pilot-Stationen für Temperaturmessungen in verschiedenen Schweizer
               Kleinseen. Die Messketten bestehen aus einem Metallgewicht am
               Grund, einer Boje an der Wasseroberfläche und Sensoren in
-              verschiedenen Wassertiefen.
+              verschiedenen Wassertiefen. Die Temperaturdaten werden zweimal pro Jahr manuell ausgelesen und auf der Webseite aufgeschalten.
             </p>
             <p>
               Ziel der Messungen ist es, die Eignung der Sensoren sowie der
@@ -29,11 +29,12 @@ class Home extends Component {
             </p>
           </div>
         ),
-        job1: "Wissenschaftlicher Betreuer des Projekts",
-        job2: "Verantwortlicher Techniker",
+        job1: "Daten und Interpretationen",
+        job2: "Messgeräte und Installation",
+        job3: "Projektleitung",
         operator: "Betreiber",
         client: "Auftraggeber",
-        contact: "Kontact",
+        contact: "Kontakt",
       },
       EN: {
         title: "Temperature Monitoring Pilot Project in Small Lakes",
@@ -45,7 +46,7 @@ class Home extends Component {
               temperature measurements in various small Swiss lakes from 2021 to
               2023. The measuring chains consist of a metal weight on the
               bottom, a buoy on the water surface and sensors at different water
-              depths.
+              depths. The temperature data is read out manually twice per year and will be added to this website subsequently.
             </p>
             <p>
               The aim of the measurements is to test the suitability of the
@@ -56,8 +57,9 @@ class Home extends Component {
             </p>
           </div>
         ),
-        job1: "Scientific Supervisor of the Project",
-        job2: "Responsible technician",
+        job1: "Data and interpretation",
+        job2: "Sensors and installation",
+        job3: "Project leader",
         operator: "Operator",
         client: "Client",
         contact: "Contact",
@@ -80,12 +82,13 @@ class Home extends Component {
               sensori e l'installazione per osservare il dinamica della
               temperatura legata al clima in laghetti e stagni in il futuro. I
               risultati servono a chiarire lo sviluppo di a Rete di misurazione
-              della temperatura dei laghi su scala svizzera.
+              della temperatura dei laghi su scala svizzera. I dati sulla temperatura vengono letti manualmente due volte all'anno e verranno aggiunti successivamente a questo sito Web.
             </p>
           </div>
         ),
-        job1: "Responsabile Scientifico del Progetto",
-        job2: "Tecnico Responsabile",
+        job1: "Dati e interpretazione",
+        job2: "Sensori e installazione",
+        job3: "Gestione del progetto"
         operator: "Operatore",
         client: "Cliente",
         contact: "Contatto",
@@ -93,27 +96,28 @@ class Home extends Component {
       FR: {
         title:
           "Projet Pilote de Surveillance de la Température dans les Petits Lacs",
-        subtitle: "Sélectionner le Lac",
+        subtitle: "Sélectionner un Lac",
         intro: (
           <div>
             <p>
               L'institut de recherche sur l'eau Eawag exploitera des stations
-              pilotes pour mesures de température dans divers petits lacs
+              pilotes pour des mesures de température dans divers petits lacs
               suisses de 2021 à 2023. Les chaînes de mesure sont constituées
-              d'un poids métallique sur en bas, une bouée à la surface de l'eau
-              et des capteurs à différentes eaux profondeurs.
+              d'un poids métallique en bas, une bouée à la surface de l'eau
+              et des capteurs à différentes profondeurs. Les données de température sont téléchargées manuellement deux fois par an et seront ensuite ajoutées à ce site Web.
             </p>
             <p>
-              Le but des mesures est de tester l'adéquation des capteurs et
-              l'installation afin d'observer les dynamique de la température
-              liée au climat dans les petits lacs et étangs l'avenir. Les
-              résultats servent à clarifier le développement d'un Réseau de
+              Le but des mesures est de tester l'adéquation des capteurs et de
+              l'installation afin d'observer la dynamique de la température
+              liée au climat dans les petits lacs et étangs. Les
+              résultats serviront au futur développement d'un réseau de
               mesure de la température des lacs dans toute la Suisse.
             </p>
           </div>
         ),
-        job1: "Superviseur Scientifique du Projet",
-        job2: "Technicien Responsable",
+        job1: "Données et interprétations",
+        job2: "Capteurs et installation",
+        job3: "Gestion de projet"
         operator: "Opérateur",
         client: "Client",
         contact: "Contact",
@@ -259,19 +263,27 @@ class Home extends Component {
                 <tr>
                   <th>{text[lang].contact}</th>
                   <td>
-                    <b>Fabian Bärenbold</b> <br />
                     {text[lang].job1}
+                    <b>Fabian Bärenbold</b> <br />
                     <br />
                     058 765 21 77
                     <br /> fabian.baerenbold@eawag.ch
                     <p>
                       {" "}
+                      {text[lang].job2}
                       <b>Michael Plüss</b>
                       <br />
-                      {text[lang].job2}
                       <br /> 058 765 22 55
                       <br />
                       michael.pluess@eawag.ch
+                    <p>
+                      {" "}
+                      {text[lang].job3}
+                      <b>Martin Schmid</b>
+                      <br />
+                      <br /> 058 765 21 93
+                      <br />
+                      martin.schmid@eawag.ch
                     </p>
                   </td>
                 </tr>
