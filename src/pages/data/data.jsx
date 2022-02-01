@@ -133,6 +133,11 @@ class Data extends Component {
                   <div className="unit">{metadata[name]["elevation"][1]}</div>
                 </div>
                 <div id="map" />
+                <img
+                  className="info-photo"
+                  src={metadata[name]["photo"]}
+                  alt="Lake"
+                />
               </div>
             </div>
             <div className="info-box">

@@ -18,6 +18,7 @@
             "461",
             "m"
         ],
+        "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/inkwilersee.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/843?iframe&bafu&axis:[x,y3]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/843?iframe&bafu&axis:[x,y,z]",
         "text": {
@@ -44,6 +45,7 @@
             "660",
             "m"
         ],
+        "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/geistsee.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/842?iframe&bafu&axis:[x,y1]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/842?iframe&bafu&axis:[x,y,z]",
         "text": {
@@ -70,6 +72,7 @@
             "1065",
             "m"
         ],
+        "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/lenkerseeli.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/844?iframe&bafu&axis:[x,y1]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/844?iframe&bafu&axis:[x,y,z]",
         "text": {
@@ -96,6 +99,7 @@
             "1620",
             "m"
         ],
+        "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/stockseewli.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/856?iframe&bafu&axis:[x,y1]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/856?iframe&bafu&axis:[x,y,z]",
         "text": {
@@ -122,6 +126,7 @@
             "2216",
             "m"
         ],
+        "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/oberesbanzlauiseeli.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/845?iframe&bafu&axis:[x,y1]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/845?iframe&bafu&axis:[x,y,z]",
         "text": {
@@ -131,10 +136,10 @@
     },
     "waldweiher": {
         "name": "Waldweiher",
-        "lat": 47.27937,
-        "lng": 8.557338,
+        "lat": 47.0481,
+        "lng": 8.28441,
         "location": [
-            "600’290 / 144’160"
+            "664’266 / 211’130"
         ],
         "area": [
             "0.23",
@@ -148,6 +153,7 @@
             "553",
             "m"
         ],
+        "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/waldweiher.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/846?iframe&bafu&axis:[x,y1]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/846?iframe&bafu&axis:[x,y,z]",
         "text": {
@@ -174,6 +180,7 @@
             "475",
             "m"
         ],
+        "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/weiherhus.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/847?iframe&bafu&axis:[x,y1]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/847?iframe&bafu&axis:[x,y,z]",
         "text": {

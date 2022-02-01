@@ -18,7 +18,8 @@ class Home extends Component {
               Pilot-Stationen für Temperaturmessungen in verschiedenen Schweizer
               Kleinseen. Die Messketten bestehen aus einem Metallgewicht am
               Grund, einer Boje an der Wasseroberfläche und Sensoren in
-              verschiedenen Wassertiefen. Die Temperaturdaten werden zweimal pro Jahr manuell ausgelesen und auf der Webseite aufgeschaltet.
+              verschiedenen Wassertiefen. Die Temperaturdaten werden zweimal pro
+              Jahr manuell ausgelesen und auf der Webseite aufgeschaltet.
             </p>
             <p>
               Ziel der Messungen ist es, die Eignung der Sensoren sowie der
@@ -35,7 +36,8 @@ class Home extends Component {
         operator: "Betreiber",
         client: "Auftraggeber",
         contact: "Kontakt",
-        eawag: "Eawag, Eidgenössische Anstalt für Wasserversorgung, Abwasserreinigung und Gewässerschutz",
+        eawag:
+          "Eawag, Eidgenössische Anstalt für Wasserversorgung, Abwasserreinigung und Gewässerschutz",
         bafu: "BAFU, Bundesamt für Umwelt",
       },
       EN: {
@@ -48,7 +50,8 @@ class Home extends Component {
               temperature measurements in various small Swiss lakes from 2021 to
               2023. The measuring chains consist of a metal weight on the
               bottom, a buoy on the water surface and sensors at different water
-              depths. The temperature data is read out manually twice per year and will be added to this website subsequently.
+              depths. The temperature data is read out manually twice per year
+              and will be added to this website subsequently.
             </p>
             <p>
               The aim of the measurements is to test the suitability of the
@@ -65,8 +68,9 @@ class Home extends Component {
         operator: "Operator",
         client: "Client",
         contact: "Contact",
-        eawag: "Eawag, Swiss Federal Institute for Aquatic Science and Technology",
-        bafu: "FOEN, Swiss Federal Office for the Environment"
+        eawag:
+          "Eawag, Swiss Federal Institute for Aquatic Science and Technology",
+        bafu: "FOEN, Swiss Federal Office for the Environment",
       },
       IT: {
         title:
@@ -86,18 +90,21 @@ class Home extends Component {
               sensori e l'installazione per osservare il dinamica della
               temperatura legata al clima in laghetti e stagni in il futuro. I
               risultati servono a chiarire lo sviluppo di a Rete di misurazione
-              della temperatura dei laghi su scala svizzera. I dati sulla temperatura vengono letti manualmente due volte all'anno e verranno aggiunti successivamente a questo sito Web.
+              della temperatura dei laghi su scala svizzera. I dati sulla
+              temperatura vengono letti manualmente due volte all'anno e
+              verranno aggiunti successivamente a questo sito Web.
             </p>
           </div>
         ),
         job1: "Dati e interpretazione",
         job2: "Sensori e installazione",
-        job3: "Gestione del progetto"
+        job3: "Gestione del progetto",
         operator: "Operatore",
         client: "Cliente",
         contact: "Contatto",
-        eawag: "Eawag, Istituto federale per l'approvvigionamento, la depurazione e la protezione delle acque"
-        bafu: "UFAM, Ufficio federale dell’ambiente"
+        eawag:
+          "Eawag, Istituto federale per l'approvvigionamento, la depurazione e la protezione delle acque",
+        bafu: "UFAM, Ufficio federale dell’ambiente",
       },
       FR: {
         title:
@@ -109,26 +116,29 @@ class Home extends Component {
               L'institut de recherche sur l'eau Eawag exploitera des stations
               pilotes pour des mesures de température dans divers petits lacs
               suisses de 2021 à 2023. Les chaînes de mesure sont constituées
-              d'un poids métallique en bas, une bouée à la surface de l'eau
-              et des capteurs à différentes profondeurs. Les données de température sont téléchargées manuellement deux fois par an et seront ensuite ajoutées à ce site Web.
+              d'un poids métallique en bas, une bouée à la surface de l'eau et
+              des capteurs à différentes profondeurs. Les données de température
+              sont téléchargées manuellement deux fois par an et seront ensuite
+              ajoutées à ce site Web.
             </p>
             <p>
               Le but des mesures est de tester l'adéquation des capteurs et de
-              l'installation afin d'observer la dynamique de la température
-              liée au climat dans les petits lacs et étangs. Les
-              résultats serviront au futur développement d'un réseau de
-              mesure de la température des lacs dans toute la Suisse.
+              l'installation afin d'observer la dynamique de la température liée
+              au climat dans les petits lacs et étangs. Les résultats serviront
+              au futur développement d'un réseau de mesure de la température des
+              lacs dans toute la Suisse.
             </p>
           </div>
         ),
         job1: "Données et interprétations",
         job2: "Capteurs et installation",
-        job3: "Gestion de projet"
+        job3: "Gestion de projet",
         operator: "Opérateur",
         client: "Client",
         contact: "Contact",
-        eawag: "Eawag, Institut fédéral pour l'aménagement, l'épuration et la protection des eaux"
-        bafu: "OFEV, Office fédéral de l’environnement"
+        eawag:
+          "Eawag, Institut fédéral pour l'aménagement, l'épuration et la protection des eaux",
+        bafu: "OFEV, Office fédéral de l’environnement",
       },
     },
   };
@@ -262,7 +272,7 @@ class Home extends Component {
               <tbody>
                 <tr>
                   <th>{text[lang].operator}</th>
-                  <td>{text[lang].eawag</td>
+                  <td>{text[lang].eawag}</td>
                 </tr>
                 <tr>
                   <th>{text[lang].client}</th>
@@ -271,34 +281,30 @@ class Home extends Component {
                 <tr>
                   <th>{text[lang].contact}</th>
                   <td>
-                    </b>{text[lang].job1}</b>
-                    Fabian Bärenbold
-                    <br /> 058 765 21 77
-                    <br /> fabian.baerenbold@eawag.ch
-                    <p>
-                      {" "}
-                      </b>{text[lang].job2}</b>
-                      Michael Plüss
-                      <br />
-                      <br /> 058 765 22 55
-                      <br />
-                      michael.pluess@eawag.ch
-                    <p>
-                      {" "}
-                      </b>{text[lang].job3}</b>
-                      Martin Schmid
-                      <br />
-                      <br /> 058 765 21 93
-                      <br />
-                      martin.schmid@eawag.ch
-                    <p>
-                      {" "}
-                      Damien Bouffard
-                      <br />
-                      <br /> 058 765 22 73
-                      <br />
-                      damien.bouffard@eawag.ch
-                    </p>
+                    <div className="person">
+                      <div className="job">{text[lang].job1}</div>
+                      <div className="name">Fabian Bärenbold</div>
+                      <div className="no">058 765 21 77</div>
+                      <div className="email">fabian.baerenbold@eawag.ch</div>
+                    </div>
+
+                    <div className="person">
+                      <div className="job">{text[lang].job2}</div>
+                      <div className="name">Michael Plüss</div>
+                      <div className="no">058 765 22 55</div>
+                      <div className="email">michael.pluess@eawag.ch</div>
+                    </div>
+                    <div className="person">
+                      <div className="job">{text[lang].job3}</div>
+                      <div className="name">Martin Schmid</div>
+                      <div className="no">058 765 21 93</div>
+                      <div className="email">martin.schmid@eawag.ch</div>
+                    </div>
+                    <div className="person">
+                      <div className="name">Damien Bouffard</div>
+                      <div className="no">058 765 22 73</div>
+                      <div className="email">damien.bouffard@eawag.ch</div>
+                    </div>
                   </td>
                 </tr>
               </tbody>

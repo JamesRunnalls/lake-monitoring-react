@@ -131,6 +131,31 @@ body {
   border-spacing: 1em;
 }
 
+.home .content table .person {
+  margin-bottom: 16px;
+}
+
+.home .content table .job {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.home .content table .name {
+  font-size: 20px;
+  color: #044E54;
+}
+
+.home .content table .no {
+  color: grey;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.home .content table .email {
+  color: grey;
+  font-size: 16px;
+}
+
 .home .content table th {
   vertical-align: top;
   text-align: left;
@@ -271,6 +296,12 @@ body {
 
 .data .info-box .info-box-header img:hover {
   opacity: 1;
+}
+
+.data .info-box .info-photo {
+  width: 100%;
+  margin-top: 16px;
+  border-radius: 5px;
 }
 
 .data .info-box .info-box-content {
