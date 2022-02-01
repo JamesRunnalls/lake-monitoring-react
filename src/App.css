@@ -273,6 +273,12 @@ body {
   opacity: 1;
 }
 
+.data .info-box .info-photo {
+  width: 100%;
+  margin-top: 16px;
+  border-radius: 5px;
+}
+
 .data .info-box .info-box-content {
   padding: 18px;
 }
