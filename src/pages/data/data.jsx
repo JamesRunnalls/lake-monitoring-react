@@ -21,6 +21,7 @@ class Data extends Component {
         heatmap: "Wasser Temperatur",
         job1: "Wissenschaftlicher Betreuer des Projekts",
         job2: "Verantwortlicher Techniker",
+        notfound: "See nicht gefunden!",
       },
       EN: {
         title: "Temperature Monitoring",
@@ -30,43 +31,72 @@ class Data extends Component {
         heatmap: "Water Temperature",
         job1: "Scientific Supervisor of the Project",
         job2: "Responsible Technician",
+        notfound: "Lake not found!",
+      },
+      IT: {
+        title: "Monitoraggio della Temperatura",
+        titlebutton: "Altri Laghi",
+        interp: "Interpretazione dei Dati",
+        linegraph: "Temperatura Superficiale",
+        heatmap: "Temperatura dell'Acqua",
+        job1: "Responsabile Scientifico del Progetto",
+        job2: "Tecnico Responsabile",
+        notfound: "Lago non trovato!",
+      },
+      FR: {
+        title: "Surveillance de la Température",
+        titlebutton: "Autres Lacs",
+        interp: "L'interprétation des Données",
+        linegraph: "Température Superficielle",
+        heatmap: "Température de l'Eau",
+        job1: "Superviseur Scientifique du Projet",
+        job2: "Technicien Responsable",
+        notfound: "Lac introuvable!",
       },
     },
   };
-  async componentDidMount() {
-    var name = window.location.search.replace("?", "");
-    var location = L.latLng(metadata[name]["lat"], metadata[name]["lng"]);
-    this.map = L.map("map", {
-      preferCanvas: true,
-      zoomControl: false,
-      center: location,
-      zoom: 15,
-      minZoom: 8,
-    });
-    L.tileLayer(
-      "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg",
-      {
-        attribution:
-          '<a title="Swiss Federal Office of Topography" href="https://www.swisstopo.admin.ch/">swisstopo</a>',
-      }
-    ).addTo(this.map);
-    new L.marker(location, {
-      id: name,
-      icon: L.divIcon({
-        className: "map-marker",
-        html:
-          `<div style="padding:10px;transform:translate(2px, -21px);position: absolute;">` +
-          `<div class="pin bounce" id="${
-            "pin-" + name
-          }" style="background-color:#044E54" />` +
-          `</div> `,
-      }),
-    }).addTo(this.map);
-    window.addEventListener("resize", this.updateMap, false);
-  }
+
   updateMap = () => {
     this.map.invalidateSize();
   };
+
+  async componentDidMount() {
+    var name = window.location.search.replace("?", "");
+    if (Object.keys(metadata).includes(name)) {
+      var location = L.latLng(metadata[name]["lat"], metadata[name]["lng"]);
+      this.map = L.map("map", {
+        preferCanvas: true,
+        zoomControl: false,
+        center: location,
+        zoom: 15,
+        minZoom: 8,
+      });
+      L.tileLayer(
+        "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg",
+        {
+          attribution:
+            '<a title="Swiss Federal Office of Topography" href="https://www.swisstopo.admin.ch/">swisstopo</a>',
+        }
+      ).addTo(this.map);
+      new L.marker(location, {
+        id: name,
+        icon: L.divIcon({
+          className: "map-marker",
+          html:
+            `<div style="padding:10px;transform:translate(2px, -21px);position: absolute;">` +
+            `<div class="pin bounce" id="${
+              "pin-" + name
+            }" style="background-color:#044E54" />` +
+            `</div> `,
+        }),
+      }).addTo(this.map);
+      window.addEventListener("resize", this.updateMap, false);
+    }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateMap, false);
+  }
   render() {
     var { text } = this.state;
     var { lang } = this.props;
@@ -78,7 +108,7 @@ class Data extends Component {
           <div className="title">
             {metadata[name]["name"]}{" "}
             <div className="extratitle">{text[lang].title}</div>
-            <Link to="/">
+            <Link to={"/" + lang.toLowerCase()}>
               <div className="title-button">{text[lang].titlebutton}</div>
             </Link>
           </div>
@@ -146,7 +176,7 @@ class Data extends Component {
                   title="View on Datalakes"
                   rel="noopener noreferrer"
                 >
-                  <img src={datalakes} alt="Datalakes"/>
+                  <img src={datalakes} alt="Datalakes" />
                 </a>
               </div>
               <div className="info-box-content">
@@ -162,7 +192,7 @@ class Data extends Component {
                   title="View on Datalakes"
                   rel="noopener noreferrer"
                 >
-                  <img src={datalakes} alt="Datalakes"/>
+                  <img src={datalakes} alt="Datalakes" />
                 </a>
               </div>
               <div className="info-box-content">
@@ -173,7 +203,15 @@ class Data extends Component {
         </div>
       );
     } else {
-      return <div>Lake not found</div>;
+      document.title = text[lang].notfound;
+      return (
+        <div className="notfound">
+          {text[lang].notfound}
+          <Link to={"/" + lang.toLowerCase()}>
+            <div className="notfound-button">{text[lang].titlebutton}</div>
+          </Link>
+        </div>
+      );
     }
   }
 }

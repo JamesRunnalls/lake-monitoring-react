@@ -62,10 +62,96 @@ class Home extends Component {
         client: "Client",
         contact: "Contact",
       },
+      IT: {
+        title:
+          "Progetto Pilota di Monitoraggio della Temperatura nei Piccoli Laghi",
+        subtitle: "Seleziona il Lago",
+        intro: (
+          <div>
+            <p>
+              L'istituto di ricerca sull'acqua Eawag gestirà stazioni pilota per
+              misurazioni della temperatura in vari laghetti svizzeri dal 2021
+              al 2023. Le catene di misurazione sono costituite da un peso in
+              metallo sul fondo, una boa sulla superficie dell'acqua e sensori a
+              diverse acque profondità.
+            </p>
+            <p>
+              Lo scopo delle misurazioni è di verificare l'adeguatezza del
+              sensori e l'installazione per osservare il dinamica della
+              temperatura legata al clima in laghetti e stagni in il futuro. I
+              risultati servono a chiarire lo sviluppo di a Rete di misurazione
+              della temperatura dei laghi su scala svizzera.
+            </p>
+          </div>
+        ),
+        job1: "Responsabile Scientifico del Progetto",
+        job2: "Tecnico Responsabile",
+        operator: "Operatore",
+        client: "Cliente",
+        contact: "Contatto",
+      },
+      FR: {
+        title:
+          "Projet Pilote de Surveillance de la Température dans les Petits Lacs",
+        subtitle: "Sélectionner le Lac",
+        intro: (
+          <div>
+            <p>
+              L'institut de recherche sur l'eau Eawag exploitera des stations
+              pilotes pour mesures de température dans divers petits lacs
+              suisses de 2021 à 2023. Les chaînes de mesure sont constituées
+              d'un poids métallique sur en bas, une bouée à la surface de l'eau
+              et des capteurs à différentes eaux profondeurs.
+            </p>
+            <p>
+              Le but des mesures est de tester l'adéquation des capteurs et
+              l'installation afin d'observer les dynamique de la température
+              liée au climat dans les petits lacs et étangs l'avenir. Les
+              résultats servent à clarifier le développement d'un Réseau de
+              mesure de la température des lacs dans toute la Suisse.
+            </p>
+          </div>
+        ),
+        job1: "Superviseur Scientifique du Projet",
+        job2: "Technicien Responsable",
+        operator: "Opérateur",
+        client: "Client",
+        contact: "Contact",
+      },
     },
   };
 
-  async componentDidMount() {
+  plotMarkers = () => {
+    var { lang } = this.props;
+    if (this.markers) {
+      this.markers.clearLayers();
+    } else {
+      this.markers = L.layerGroup();
+      this.markers.addTo(this.map);
+    }
+    for (var lake of Object.keys(metadata)) {
+      var location = L.latLng(metadata[lake].lat, metadata[lake].lng);
+      var marker = new L.marker(location, {
+        id: lake,
+        icon: L.divIcon({
+          className: "map-marker",
+          html:
+            `<div style="padding:10px;transform:translate(2px, -21px);position: absolute;">` +
+            `<div class="pin bounce" id="${
+              "pin-" + lake
+            }" style="background-color:#044E54" />` +
+            `</div> `,
+        }),
+      }).addTo(this.markers);
+      marker.bindTooltip(metadata[lake].name);
+      marker.on("click", (event) => {
+        window.location.href =
+          `/${lang.toLowerCase()}/data?` + event.target.options.id;
+      });
+    }
+  };
+
+  plotMap = () => {
     var southWest = L.latLng(45.4, 5.14);
     var northEast = L.latLng(48.23, 11.48);
     var bounds = L.latLngBounds(southWest, northEast);
@@ -97,37 +183,15 @@ class Home extends Component {
           '<a title="Swiss Federal Office of Topography" href="https://www.swisstopo.admin.ch/">swisstopo</a>',
       }
     ).addTo(this.map);
-    for (var lake of Object.keys(metadata)) {
-      var location = L.latLng(metadata[lake].lat, metadata[lake].lng);
-      var marker = new L.marker(location, {
-        id: lake,
-        icon: L.divIcon({
-          className: "map-marker",
-          html:
-            `<div style="padding:10px;transform:translate(2px, -21px);position: absolute;">` +
-            `<div class="pin bounce" id="${
-              "pin-" + lake
-            }" style="background-color:#044E54" />` +
-            `</div> `,
-        }),
-      }).addTo(this.map);
-
-      marker.bindTooltip(metadata[lake].name);
-      marker.on("click", (event) => {
-        window.location.href = "/data?" + event.target.options.id;
-      });
-    }
-    window.addEventListener("resize", this.updateMap, false);
-  }
+    this.plotMarkers();
+  };
 
   onMouseOver = (event) => {
     try {
       document.getElementById(
         "pin-" + event.target.id.split("-")[1]
       ).style.backgroundColor = "#54D1DB";
-    } catch (e) {
-      console.log();
-    }
+    } catch (e) {}
   };
 
   onMouseOut = (event) => {
@@ -142,6 +206,15 @@ class Home extends Component {
     this.map.invalidateSize();
   };
 
+  async componentDidMount() {
+    this.plotMap();
+    window.addEventListener("resize", this.updateMap, false);
+  }
+
+  componentDidUpdate() {
+    this.plotMarkers();
+  }
+
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateMap, false);
   }
@@ -151,7 +224,11 @@ class Home extends Component {
     var { lang } = this.props;
     document.title = text[lang].title;
     var items = Object.keys(metadata).map((lake) => {
-      return { value: metadata[lake].name, link: "/data?" + lake, key: lake };
+      return {
+        value: metadata[lake].name,
+        link: `/${lang.toLowerCase()}/data?` + lake,
+        key: lake,
+      };
     });
     return (
       <div className="home">

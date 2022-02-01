@@ -126,12 +126,12 @@ body {
   box-sizing: border-box;
 }
 
-table {
+.home .content table {
   border-collapse: separate;
   border-spacing: 1em;
 }
 
-table th {
+.home .content table th {
   vertical-align: top;
   text-align: left;
   color: #044e54;
@@ -175,6 +175,10 @@ table th {
   .home .content .title {
     margin-top: 0;
     font-size: 30px;
+  }
+
+  .home .content table {
+    border-collapse: collapse;
   }
 }
 
@@ -394,6 +398,36 @@ table th {
     margin: 0;
     margin-bottom: 16px;
   }
+}
+
+/* Not Found */
+
+.notfound {
+  margin-top: 30%;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.notfound a {
+  text-decoration: none;
+}
+
+.notfound .notfound-button {
+  border: 1px solid #ad2167;
+  border-radius: 16px;
+  color: #ad2167;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 16px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 16px;
+}
+
+.notfound .notfound-button:hover {
+  background-color: #ffe0f0;
+  text-shadow: 0px 0px 1px #ad2167;
 }
 
 /* Map markers */
