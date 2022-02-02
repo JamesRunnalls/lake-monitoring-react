@@ -6,7 +6,7 @@ import area from "./img/area.svg";
 import depth from "./img/depth.svg";
 import elevation from "./img/elevation.svg";
 import phone from "./img/phone.svg";
-import datalakes from "./img/datalakes.png";
+import download from "./img/download.svg";
 import metadata from "./../../metadata.json";
 import L from "leaflet";
 
@@ -182,10 +182,10 @@ class Data extends Component {
                 <a
                   href={metadata[name]["linegraph"].split("?")[0]}
                   target="_blank"
-                  title="View on Datalakes"
+                  title="Datalakes"
                   rel="noopener noreferrer"
                 >
-                  <img src={datalakes} alt="Datalakes" />
+                  <img src={download} alt="Download" />
                 </a>
               </div>
               <div className="info-box-content">
@@ -198,10 +198,10 @@ class Data extends Component {
                 <a
                   href={metadata[name]["heatmap"].split("?")[0]}
                   target="_blank"
-                  title="View on Datalakes"
+                  title="Datalakes"
                   rel="noopener noreferrer"
                 >
-                  <img src={datalakes} alt="Datalakes" />
+                  <img src={download} alt="Download" />
                 </a>
               </div>
               <div className="info-box-content">
@@ -215,10 +215,10 @@ class Data extends Component {
                   <a
                     href={metadata[name]["oxygen"].split("?")[0]}
                     target="_blank"
-                    title="View on Datalakes"
+                    title="Datalakes"
                     rel="noopener noreferrer"
                   >
-                    <img src={datalakes} alt="Datalakes" />
+                    <img src={download} alt="Download" />
                   </a>
                 </div>
                 <div className="info-box-content">
