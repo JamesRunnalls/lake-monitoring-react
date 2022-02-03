@@ -170,12 +170,14 @@ class Data extends Component {
             </div>
           </div>
           <div className="right">
-            <div className="info-box">
-              <div className="info-box-header">{text[lang].interp}</div>
-              <div className="info-box-content">
-                <div className="text">{metadata[name]["text"][lang]}</div>
+            {lang in metadata[name]["text"] && (
+              <div className="info-box">
+                <div className="info-box-header">{text[lang].interp}</div>
+                <div className="info-box-content">
+                  <div className="text">{metadata[name]["text"][lang]}</div>
+                </div>
               </div>
-            </div>
+            )}
             <div className="info-box">
               <div className="info-box-header">
                 {text[lang].linegraph}
