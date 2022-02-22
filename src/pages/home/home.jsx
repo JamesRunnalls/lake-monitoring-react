@@ -14,7 +14,7 @@ class Home extends Component {
         intro: (
           <div>
             <p>
-              Das Wasserforschungsinstitut Eawag betreibt von 2021 bis 2023
+              Das Wasserforschungsinstitut Eawag betreibt im Auftrag des Bundesamt für Umwelt (BAFU) von 2021 bis 2023
               Pilot-Stationen für Temperaturmessungen in verschiedenen Schweizer
               Kleinseen. Die Messketten bestehen aus einem Metallgewicht am
               Grund, einer Boje an der Wasseroberfläche und Sensoren in
@@ -80,7 +80,7 @@ class Home extends Component {
         intro: (
           <div>
             <p>
-              L'istituto di ricerca sull'acqua Eawag gestirà stazioni pilota per
+              L'istituto di ricerca sull'acqua Eawag opera per conto dell'Ufficio federale dell'ambiente (UFAM) stazioni pilota per
               misurazioni della temperatura in vari laghetti svizzeri dal 2021
               al 2023. Le catene di misurazione sono costituite da un peso in
               metallo sul fondo, una boa sulla superficie dell'acqua e sensori a
@@ -114,7 +114,7 @@ class Home extends Component {
         intro: (
           <div>
             <p>
-              L'institut de recherche sur l'eau Eawag exploitera des stations
+              Dans le cadre d'un projet pour l'office fédérale de l'environnement (OFEV), l'institut de recherche sur l'eau Eawag exploitera des stations
               pilotes pour des mesures de température dans divers petits lacs
               suisses de 2021 à 2023. Les chaînes de mesure sont constituées
               d'un poids métallique en bas, une bouée à la surface de l'eau et
