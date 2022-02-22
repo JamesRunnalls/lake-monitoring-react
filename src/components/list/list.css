@@ -15,6 +15,7 @@
   border-radius: 20px;
   margin: 10px;
   color: #044E54;
+  box-shadow: rgb(4 78 84 / 15%) 0px 2px 5px 0px;
 }
 
 .react-list .react-list-inner:hover {

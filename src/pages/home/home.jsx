@@ -46,7 +46,8 @@ class Home extends Component {
         intro: (
           <div>
             <p>
-              The water research institute Eawag will operate pilot stations for
+              On behalf of the Swiss Federal Office for the Environment (FOEN),
+              the water research institute Eawag will operate pilot stations for
               temperature measurements in various small Swiss lakes from 2021 to
               2023. The measuring chains consist of a metal weight on the
               bottom, a buoy on the water surface and sensors at different water

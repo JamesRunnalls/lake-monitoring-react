@@ -23,6 +23,7 @@ class Data extends Component {
         job1: "Wissenschaftlicher Betreuer des Projekts",
         job2: "Verantwortlicher Techniker",
         notfound: "See nicht gefunden!",
+        graphinfo: "",
       },
       EN: {
         title: "Temperature Monitoring",
@@ -34,6 +35,8 @@ class Data extends Component {
         job1: "Scientific Supervisor of the Project",
         job2: "Responsible Technician",
         notfound: "Lake not found!",
+        graphinfo:
+          "Edit the display period using the slider or the datetime selector above.",
       },
       IT: {
         title: "Monitoraggio della Temperatura",
@@ -45,6 +48,7 @@ class Data extends Component {
         job1: "Responsabile Scientifico del Progetto",
         job2: "Tecnico Responsabile",
         notfound: "Lago non trovato!",
+        graphinfo: "",
       },
       FR: {
         title: "Surveillance de la Température",
@@ -56,6 +60,7 @@ class Data extends Component {
         job1: "Superviseur Scientifique du Projet",
         job2: "Technicien Responsable",
         notfound: "Lac introuvable!",
+        graphinfo: "",
       },
     },
   };
@@ -192,6 +197,7 @@ class Data extends Component {
               </div>
               <div className="info-box-content">
                 <iframe src={metadata[name]["linegraph"]} title="Datalakes" />
+                <div className="info-box-footer">{text[lang].graphinfo}</div>
               </div>
             </div>
             <div className="info-box">
@@ -208,6 +214,7 @@ class Data extends Component {
               </div>
               <div className="info-box-content">
                 <iframe src={metadata[name]["heatmap"]} title="Datalakes" />
+                <div className="info-box-footer">{text[lang].graphinfo}</div>
               </div>
             </div>
             {"oxygen" in metadata[name] && (
@@ -225,6 +232,7 @@ class Data extends Component {
                 </div>
                 <div className="info-box-content">
                   <iframe src={metadata[name]["oxygen"]} title="Datalakes" />
+                  <div className="info-box-footer">{text[lang].graphinfo}</div>
                 </div>
               </div>
             )}

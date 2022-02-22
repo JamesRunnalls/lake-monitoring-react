@@ -266,6 +266,7 @@ body {
   height: 250px;
   border-radius: 5px;
   margin-top: 16px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
 }
 
 .data .info-box {
@@ -273,6 +274,11 @@ body {
   border: 1px solid #bcccdc;
   border-radius: 5px;
   margin-bottom: 16px;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+
+.data .info-box:hover {
+  box-shadow: rgb(149 157 165 / 30%) 0px 8px 24px;
 }
 
 .data .info-box .info-box-header {
@@ -302,10 +308,17 @@ body {
   width: 100%;
   margin-top: 16px;
   border-radius: 5px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
 }
 
 .data .info-box .info-box-content {
   padding: 18px;
+}
+
+.data .info-box .info-box-content .info-box-footer {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
 }
 
 .data .info-box .contact {
