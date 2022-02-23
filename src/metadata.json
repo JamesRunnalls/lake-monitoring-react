@@ -16,7 +16,7 @@
         ],
         "elevation": [
             "461",
-            "m"
+            "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/inkwilersee.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/843?iframe&bafu&axis:[x,y3]",
@@ -45,7 +45,7 @@
         ],
         "elevation": [
             "660",
-            "m"
+            "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/geistsee.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/842?iframe&bafu&axis:[x,y1]",
@@ -73,7 +73,7 @@
         ],
         "elevation": [
             "1065",
-            "m"
+            "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/lenkerseeli.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/844?iframe&bafu&axis:[x,y1]",
@@ -101,7 +101,7 @@
         ],
         "elevation": [
             "1620",
-            "m"
+            "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/stockseewli.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/856?iframe&bafu&axis:[x,y1]",
@@ -129,7 +129,7 @@
         ],
         "elevation": [
             "2216",
-            "m"
+            "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/oberesbanzlauiseeli.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/845?iframe&bafu&axis:[x,y1]",
@@ -157,7 +157,7 @@
         ],
         "elevation": [
             "553",
-            "m"
+            "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/waldweiher.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/846?iframe&bafu&axis:[x,y1]",
@@ -185,7 +185,7 @@
         ],
         "elevation": [
             "475",
-            "m"
+            "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/weiherhus.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/847?iframe&bafu&axis:[x,y1]",

@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../../App.css";
-import location from "./img/location.svg";
-import area from "./img/area.svg";
-import depth from "./img/depth.svg";
-import elevation from "./img/elevation.svg";
 import phone from "./img/phone.svg";
 import download from "./img/download.svg";
 import metadata from "./../../metadata.json";
@@ -24,6 +20,9 @@ class Data extends Component {
         job2: "Verantwortlicher Techniker",
         notfound: "See nicht gefunden!",
         graphinfo: "",
+        depth: "Tiefe",
+        area: "Fläche",
+        elevation: "Höhe",
       },
       EN: {
         title: "Temperature Monitoring",
@@ -37,6 +36,9 @@ class Data extends Component {
         notfound: "Lake not found!",
         graphinfo:
           "Edit the display period using the slider or the datetime selector above.",
+        depth: "Depth",
+        area: "Area",
+        elevation: "Elevation",
       },
       IT: {
         title: "Monitoraggio della Temperatura",
@@ -49,6 +51,9 @@ class Data extends Component {
         job2: "Tecnico Responsabile",
         notfound: "Lago non trovato!",
         graphinfo: "",
+        depth: "profondità",
+        area: "superficie",
+        elevation: "altezza",
       },
       FR: {
         title: "Surveillance de la Température",
@@ -61,6 +66,9 @@ class Data extends Component {
         job2: "Technicien Responsable",
         notfound: "Lac introuvable!",
         graphinfo: "",
+        depth: "profondeur",
+        area: "superficie",
+        elevation: "altitude",
       },
     },
   };
@@ -87,7 +95,7 @@ class Data extends Component {
             '<a title="Swiss Federal Office of Topography" href="https://www.swisstopo.admin.ch/">swisstopo</a>',
         }
       ).addTo(this.map);
-      new L.marker(location, {
+      L.marker(location, {
         id: name,
         icon: L.divIcon({
           className: "map-marker",
@@ -98,7 +106,13 @@ class Data extends Component {
             }" style="background-color:#044E54" />` +
             `</div> `,
         }),
-      }).addTo(this.map);
+      })
+        .addTo(this.map)
+        .bindTooltip(metadata[name]["location"][0], {
+          permanent: true,
+          direction: "bottom",
+        })
+        .openTooltip();
       window.addEventListener("resize", this.updateMap, false);
     }
   }
@@ -122,32 +136,38 @@ class Data extends Component {
             </Link>
           </div>
           <div className="left">
-            <div className="info-box">
-              <div className="info-box-content">
-                <div className="info">
-                  <img src={location} alt="location" />{" "}
-                  {metadata[name]["location"]}
-                </div>
-                <div className="info">
-                  <img src={depth} alt="depth" /> {metadata[name]["depth"][0]}
-                  <div className="unit">{metadata[name]["depth"][1]}</div>
-                </div>
-                <div className="info">
-                  <img src={area} alt="area" /> {metadata[name]["area"][0]}
-                  <div className="unit">{metadata[name]["area"][1]}</div>
-                </div>
-                <div className="info">
-                  <img src={elevation} alt="elevation" />{" "}
-                  {metadata[name]["elevation"][0]}
-                  <div className="unit">{metadata[name]["elevation"][1]}</div>
-                </div>
-                <div id="map" />
-                <img
-                  className="info-photo"
-                  src={metadata[name]["photo"]}
-                  alt="Lake"
-                />
-              </div>
+            <div className="info-box-clear">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      {metadata[name]["depth"][0]}
+                      <div className="unit">{metadata[name]["depth"][1]}</div>
+                    </td>
+                    <td>
+                      {metadata[name]["area"][0]}
+                      <div className="unit">{metadata[name]["area"][1]}</div>
+                    </td>
+                    <td>
+                      {metadata[name]["elevation"][0]}
+                      <div className="unit">
+                        {metadata[name]["elevation"][1]}
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>{text[lang].depth}</th>
+                    <th>{text[lang].area}</th>
+                    <th>{text[lang].elevation}</th>
+                  </tr>
+                </tbody>
+              </table>
+              <div id="map" />
+              <img
+                className="info-photo"
+                src={metadata[name]["photo"]}
+                alt="Lake"
+              />
             </div>
             <div className="info-box">
               <div className="contact">
