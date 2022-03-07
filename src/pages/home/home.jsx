@@ -123,9 +123,8 @@ class Home extends Component {
               ajoutées à ce site Web.
             </p>
             <p>
-              Le but des mesures est de tester l'adéquation des capteurs et de
-              l'installation afin d'observer la dynamique de la température liée
-              au climat dans les petits lacs et étangs. Les résultats serviront
+              Le but des mesures est de tester ces installations pour quantifier les effets du climat
+              sur la dynamique de la température des petits lacs et étangs. Les résultats serviront
               au futur développement d'un réseau de mesure de la température des
               lacs dans toute la Suisse.
             </p>
