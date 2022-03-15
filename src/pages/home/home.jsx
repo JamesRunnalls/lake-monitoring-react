@@ -80,26 +80,21 @@ class Home extends Component {
         intro: (
           <div>
             <p>
-              L'istituto di ricerca sull'acqua Eawag opera per conto dell'Ufficio federale dell'ambiente (UFAM) stazioni pilota per
-              misurazioni della temperatura in vari laghetti svizzeri dal 2021
-              al 2023. Le catene di misurazione sono costituite da un peso in
-              metallo sul fondo, una boa sulla superficie dell'acqua e sensori a
-              diverse acque profondità.
+              L'istituto di ricerca sull'acqua Eawag, per conto dell'Ufficio federale dell'ambiente (UFAM), 
+              opera con stazioni pilota dedicate a misurazioni della temperatura in vari piccoli laghi svizzeri per un periodo che va dal 2021 al 2023. 
+              Le catene di misurazione sono costituite da un peso in metallo posizionato sul fondo, da una boa sulla superficie dell'acqua e da sensori a diverse profondità. 
+              La raccolta dati della temperatura viene effettuata due volte all’anno, in seguito la base dati viene aggiunta a questo sito.
+
             </p>
             <p>
-              Lo scopo delle misurazioni è di verificare l'adeguatezza del
-              sensori e l'installazione per osservare il dinamica della
-              temperatura legata al clima in laghetti e stagni in il futuro. I
-              risultati servono a chiarire lo sviluppo di a Rete di misurazione
-              della temperatura dei laghi su scala svizzera. I dati sulla
-              temperatura vengono letti manualmente due volte all'anno e
-              verranno aggiunti successivamente a questo sito Web.
+              Lo scopo delle misurazioni è di verificare l'adeguatezza dei sensori e l'installazione al fine di poter osservare in futuro le dinamiche della temperatura, 
+              legate al clima, in stagni e piccoli laghi. I risultati servono a fare luce sullo sviluppo di una rete di misurazioni della temperatura nei laghi, su scala nazionale. 
             </p>
           </div>
         ),
         job1: "Dati e interpretazione",
         job2: "Sensori e installazione",
-        job3: "Gestione del progetto",
+        job3: "Capiprogetto",
         operator: "Operatore",
         client: "Cliente",
         contact: "Contatto",
