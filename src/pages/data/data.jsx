@@ -13,7 +13,7 @@ class Data extends Component {
         title: "Temperaturmonitoring",
         titlebutton: "Andere Seen",
         interp: "Interpretation der Daten",
-        linegraph: "Oberflächentemperatur",
+        linegraph: "Oberflächen und Grundtemperatur",
         heatmap: "Wassertemperatur",
         oxygen: "Sauerstoff",
         job1: "Wissenschaftlicher Betreuer des Projekts",
@@ -28,7 +28,7 @@ class Data extends Component {
         title: "Temperature Monitoring",
         titlebutton: "View Other Lakes",
         interp: "Data Interpretation",
-        linegraph: "Surface Temperature",
+        linegraph: "Surface and Bottom Temperature",
         heatmap: "Water Temperature",
         oxygen: "Oxygen",
         job1: "Scientific Supervisor of the Project",
@@ -44,7 +44,7 @@ class Data extends Component {
         title: "Monitoraggio della Temperatura",
         titlebutton: "Altri Laghi",
         interp: "Interpretazione dei Dati",
-        linegraph: "Temperatura Superficiale",
+        linegraph: "Temperatura Superficiale e Inferiore",
         heatmap: "Temperatura dell'Acqua",
         oxygen: "Ossigeno",
         job1: "Responsabile Scientifico del Progetto",
@@ -59,7 +59,7 @@ class Data extends Component {
         title: "Surveillance de la Température",
         titlebutton: "Autres Lacs",
         interp: "Interprétation des Données",
-        linegraph: "Température de Surface",
+        linegraph: "Température de Surface et de Fond",
         heatmap: "Température de l'Eau",
         oxygen: "Oxygène",
         job1: "Superviseur Scientifique du Projet",
@@ -216,7 +216,10 @@ class Data extends Component {
                 </a>
               </div>
               <div className="info-box-content">
-                <iframe src={metadata[name]["linegraph"]} title="Datalakes" />
+                <iframe
+                  src={metadata[name]["linegraph"] + "&" + lang}
+                  title="Datalakes"
+                />
                 <div className="info-box-footer">{text[lang].graphinfo}</div>
               </div>
             </div>
@@ -233,7 +236,10 @@ class Data extends Component {
                 </a>
               </div>
               <div className="info-box-content">
-                <iframe src={metadata[name]["heatmap"]} title="Datalakes" />
+                <iframe
+                  src={metadata[name]["heatmap"] + "&" + lang}
+                  title="Datalakes"
+                />
                 <div className="info-box-footer">{text[lang].graphinfo}</div>
               </div>
             </div>
@@ -251,7 +257,10 @@ class Data extends Component {
                   </a>
                 </div>
                 <div className="info-box-content">
-                  <iframe src={metadata[name]["oxygen"]} title="Datalakes" />
+                  <iframe
+                    src={metadata[name]["oxygen"] + "&" + lang}
+                    title="Datalakes"
+                  />
                   <div className="info-box-footer">{text[lang].graphinfo}</div>
                 </div>
               </div>
