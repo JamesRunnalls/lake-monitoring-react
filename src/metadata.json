@@ -19,7 +19,7 @@
             "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/inkwilersee.jpg",
-        "linegraph": "https://www.datalakes-eawag.ch/datadetail/843?iframe&bafu&axis:[x,y3]",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/843?iframe&bafu&axis:[x,y3,y4]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/843?iframe&bafu&axis:[x,y,z]",
         "oxygen": "https://www.datalakes-eawag.ch/datadetail/848?iframe&bafu&axis:[x,y,z1]",
         "text": {
@@ -49,7 +49,7 @@
             "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/geistsee.jpg",
-        "linegraph": "https://www.datalakes-eawag.ch/datadetail/842?iframe&bafu&axis:[x,y1]",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/842?iframe&bafu&axis:[x,y1,y2]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/842?iframe&bafu&axis:[x,y,z]",
         "text": {
             "DE": "In der bisherigen Messperiode (April bis September 2021) erreichte der Geistsee die Maximaltemperatur von ungefähr 26 °C Mitte Juni. Danach waren die Temperaturen aufgrund des wechselhaften und überaus regenreichen Sommers nicht mehr ganz so hoch. Der Geistsee war trotz seiner geringen Tiefe den ganzen Sommer 2021 stabil geschichtet, d.h. das Wasser unterhalb von etwa 3-4 m mischt nicht mit dem Oberflächenwasser und bleibt kühl. Das stärkste Mischereignis gab es vom 12.-13. Juli und wurde durch einem starken Sturm ausgelöst wurde.",
@@ -78,7 +78,7 @@
             "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/lenkerseeli.jpg",
-        "linegraph": "https://www.datalakes-eawag.ch/datadetail/844?iframe&bafu&axis:[x,y1]",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/844?iframe&bafu&axis:[x,y1,y2]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/844?iframe&bafu&axis:[x,y,z]",
         "text": {
             "DE": "Die Oberflächentemperatur des Lenkerseelis erreichte Mitte Juni ihr Maximum von ungefähr 20 °C. Im Juli und August blieben die Temperaturen wegen des eher durchzogenen Sommerwetters eher im Bereich von 10 – 15 °C. Trotz der geringen Tiefe ist das Lenkerseeli ab Anfang Juni bis mindestens Ende August durchgehend stabil geschichtet. Das wärmere Wasser befindet sich oben und das kältere, schwerere unten. Dies bedeutet, dass der Sauerstoffgehalt im unteren Teils des Lenkerseelis wohl über den Sommer stark abnimmt. Messungen dazu werden aber erst nächstes Jahr vorhanden sein.",
@@ -107,7 +107,7 @@
             "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/stockseewli.jpg",
-        "linegraph": "https://www.datalakes-eawag.ch/datadetail/856?iframe&bafu&axis:[x,y1]",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/856?iframe&bafu&axis:[x,y1,y2]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/856?iframe&bafu&axis:[x,y,z]",
         "text": {
             "DE": "In der bisherigen Messperiode (Juli bis September 2021) erreichte das Stockseewli aufgrund der eher niedrigen Sommertemperaturen nie eine Temperatur von über 15°C. Trotz der geringen Tiefe besteht im Stockseewli auch im Sommer meist eine gewisse Schichtung mit wärmerem, leichterem Wasser an der Oberfläche und leicht kühlerem am Grund. Grössere Mischereignisse fanden Ende August und Mitte September statt.",
@@ -136,7 +136,7 @@
             "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/oberesbanzlauiseeli.jpg",
-        "linegraph": "https://www.datalakes-eawag.ch/datadetail/845?iframe&bafu&axis:[x,y1]",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/845?iframe&bafu&axis:[x,y1,y2]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/845?iframe&bafu&axis:[x,y,z]",
         "text": {
             "DE": "Bei der Einsetzung der Messkette war das Seeli noch grösstenteils mit Schnee und Eis bedeckt und die Temperaturschichtung daher invers. Bis Ende August erreichte die Temperatur dann Maximalwerte von bis zu 15 °C. Wohl aufgrund des sehr klaren Wassers, welches der Sonnenstrahlung erlaubt bis an den Seegrund vorzudringen, mischt das obere Bänzlauiseeli auch im Sommer regelmässig bis an den Grund.",
@@ -165,7 +165,7 @@
             "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/waldweiher.jpg",
-        "linegraph": "https://www.datalakes-eawag.ch/datadetail/846?iframe&bafu&axis:[x,y1]",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/846?iframe&bafu&axis:[x,y1,y2]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/846?iframe&bafu&axis:[x,y,z]",
         "text": {
             "DE": "Die Oberfläche des Waldweihers erreichte Mitte Juni eine Maximaltemperatur von ungefähr 25 °C. Danach war das Wasser aufgrund des durchzogenen Sommerwetters wieder deutlich kühler (15 – 20 °C). Wegen der geringen Tiefe und des eher kühlen Wetters mischte der Waldweiher während des Sommers regelmässig durch, er ist also sogenannt polymiktisch.",
@@ -194,7 +194,7 @@
             "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/weiherhus.jpg",
-        "linegraph": "https://www.datalakes-eawag.ch/datadetail/847?iframe&bafu&axis:[x,y1]",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/847?iframe&bafu&axis:[x,y1,y2]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/847?iframe&bafu&axis:[x,y,z]",
         "text": {
             "DE": "Die Temperatur im Weiherhus-Weiher erreichte ihr jährliches Maximum Mitte Juni mit etwa 23 °C. Danach schwankte die Temperatur an der Oberfläche um 20 °C, was vor allem durch das eher kühle Sommerwetter ausgelöst wurde. Trotz der geringen Tiefe von 2 m mischte der Weiher im Sommer nie bis an den Grund durch. D.h. dass das kühle Wasser unterhalb von 1 - 1.5 m nie mit der Atmosphäre in Kontakt kam und dadurch das Sauerstoffreservoir nicht aufgefüllt werden konnte. Die meisten partiellen Mischereignisse (bis ca. 1.5 m Tiefe) gab es Ende Juni bis Mitte Juli, ausgelöst durch kühles Wetter und starke Winde.",
