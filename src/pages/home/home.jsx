@@ -37,8 +37,8 @@ class Home extends Component {
         client: "Auftraggeber",
         contact: "Kontakt",
         eawag:
-          "Eawag, Eidgenössische Anstalt für Wasserversorgung, Abwasserreinigung und Gewässerschutz",
-        bafu: "BAFU, Bundesamt für Umwelt",
+          "Eawag: Das Wasserforschungsinstitut des ETH-Bereichs",
+        bafu: "Bundesamt für Umwelt (BAFU)",
       },
       EN: {
         title: "Temperature Monitoring Pilot Project in Small Lakes",
@@ -70,8 +70,8 @@ class Home extends Component {
         client: "Client",
         contact: "Contact",
         eawag:
-          "Eawag, Swiss Federal Institute for Aquatic Science and Technology",
-        bafu: "FOEN, Swiss Federal Office for the Environment",
+          "Eawag: Swiss Federal Institute of Aquatic Science and Technology",
+        bafu: "Swiss Federal Office for the Environment (FOEN)",
       },
       IT: {
         title:
@@ -99,8 +99,8 @@ class Home extends Component {
         client: "Cliente",
         contact: "Contatto",
         eawag:
-          "Eawag, Istituto federale per l'approvvigionamento, la depurazione e la protezione delle acque",
-        bafu: "UFAM, Ufficio federale dell’ambiente",
+          "Eawag: L'Istituto per la Ricerca sulle Acque nel Settore dei Politecnici Federali",
+        bafu: "Ufficio federale dell’ambiente (UFAM)",
       },
       FR: {
         title:
@@ -132,8 +132,8 @@ class Home extends Component {
         client: "Client",
         contact: "Contact",
         eawag:
-          "Eawag, Institut fédéral pour l'aménagement, l'épuration et la protection des eaux",
-        bafu: "OFEV, Office fédéral de l’environnement",
+          "Eawag: Institut Fédéral Suisse des Sciences et Technologies de l’Eau",
+        bafu: "Office fédéral de l’environnement (OFEV)",
       },
     },
   };
