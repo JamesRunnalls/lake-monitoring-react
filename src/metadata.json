@@ -208,7 +208,7 @@
         "lat": 46.64,
         "lng": 6.286,
         "location": [
-            "659’413 / 166’067"
+            "511’751 / 166’063"
         ],
         "area": [
             "95",
@@ -225,6 +225,29 @@
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/lacdejoux.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/643?iframe&bafu&axis:[x,y5,y4]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/643?iframe&bafu&axis:[x,y,z]",
+        "text": []
+    },
+    "geneva": {
+        "name": "Lac Léman",
+        "lat": 46.5,
+        "lng": 6.67,
+        "location": [
+            "541’001 / 150’146"
+        ],
+        "area": [
+            "580",
+            "km²"
+        ],
+        "depth": [
+            "310",
+            "m"
+        ],
+        "elevation": [
+            "372",
+            "mü.M."
+        ],
+        "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/geneva.jpg",
+        "heatmap": "https://www.datalakes-eawag.ch/datadetail/448?iframe&bafu&axis:[x,y,z]",
         "text": []
     }
 }

@@ -77,6 +77,13 @@ class Data extends Component {
     this.map.invalidateSize();
   };
 
+  extractLink = (iframe) => {
+    var arr = iframe.split("?");
+    var params = arr[1].split("&");
+    var url = arr[0] + "?" + params.find((p) => p.includes("axis"));
+    return url;
+  };
+
   async componentDidMount() {
     var name = window.location.search.replace("?", "");
     if (Object.keys(metadata).includes(name)) {
@@ -85,7 +92,7 @@ class Data extends Component {
         preferCanvas: true,
         zoomControl: false,
         center: location,
-        zoom: 15,
+        zoom: 13,
         minZoom: 8,
       });
       L.tileLayer(
@@ -203,52 +210,56 @@ class Data extends Component {
                 </div>
               </div>
             )}
-            <div className="info-box">
-              <div className="info-box-header">
-                {text[lang].linegraph}
-                <a
-                  href={metadata[name]["linegraph"].split("?")[0]}
-                  target="_blank"
-                  title="Datalakes"
-                  rel="noopener noreferrer"
-                >
-                  <img src={download} alt="Download" />
-                </a>
+            {"linegraph" in metadata[name] && (
+              <div className="info-box">
+                <div className="info-box-header">
+                  {text[lang].linegraph}
+                  <a
+                    href={this.extractLink(metadata[name]["linegraph"])}
+                    target="_blank"
+                    title="Datalakes"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={download} alt="Download" />
+                  </a>
+                </div>
+                <div className="info-box-content">
+                  <iframe
+                    src={metadata[name]["linegraph"] + "&" + lang}
+                    title="Datalakes"
+                  />
+                  <div className="info-box-footer">{text[lang].graphinfo}</div>
+                </div>
               </div>
-              <div className="info-box-content">
-                <iframe
-                  src={metadata[name]["linegraph"] + "&" + lang}
-                  title="Datalakes"
-                />
-                <div className="info-box-footer">{text[lang].graphinfo}</div>
+            )}
+            {"heatmap" in metadata[name] && (
+              <div className="info-box">
+                <div className="info-box-header">
+                  {text[lang].heatmap}
+                  <a
+                    href={this.extractLink(metadata[name]["heatmap"])}
+                    target="_blank"
+                    title="Datalakes"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={download} alt="Download" />
+                  </a>
+                </div>
+                <div className="info-box-content">
+                  <iframe
+                    src={metadata[name]["heatmap"] + "&" + lang}
+                    title="Datalakes"
+                  />
+                  <div className="info-box-footer">{text[lang].graphinfo}</div>
+                </div>
               </div>
-            </div>
-            <div className="info-box">
-              <div className="info-box-header">
-                {text[lang].heatmap}
-                <a
-                  href={metadata[name]["heatmap"].split("?")[0]}
-                  target="_blank"
-                  title="Datalakes"
-                  rel="noopener noreferrer"
-                >
-                  <img src={download} alt="Download" />
-                </a>
-              </div>
-              <div className="info-box-content">
-                <iframe
-                  src={metadata[name]["heatmap"] + "&" + lang}
-                  title="Datalakes"
-                />
-                <div className="info-box-footer">{text[lang].graphinfo}</div>
-              </div>
-            </div>
+            )}
             {"oxygen" in metadata[name] && (
               <div className="info-box">
                 <div className="info-box-header">
                   {text[lang].oxygen}
                   <a
-                    href={metadata[name]["oxygen"].split("?")[0]}
+                    href={this.extractLink(metadata[name]["oxygen"])}
                     target="_blank"
                     title="Datalakes"
                     rel="noopener noreferrer"
