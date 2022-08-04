@@ -202,5 +202,34 @@
             "FR": "La température dans l'étang Weiherhus a atteint sa température maximale d'environ 23 °C vers mi-juin. Ensuite, la température de surface était autour des 20 °C à cause de la météo changeante pendant l'été. Malgré sa faible profondeur de 2 m, l'étang ne s'est jamais entièrement mélangé en été. Cela signifie que l'eau en-dessous de 1 - 1.5 m de profondeur n'était  pas en contact avec l'atmosphère et que le réservoir d'oxygène ne s'est pas rechargé. La plupart des évènements durant lesquels la colonne d'eau s'est partiellement mélangée se sont produits de fin juin à mi-juillet, quand la météo était fraîche et venteuse.",
             "IT": "La temperatura massima nello stagno del Weiherhus è stata registrata a metà giugno ed ha un valore di circa 23°C. In seguito, le temperature superficiali si aggiravano attorno ai 20°C a causa di una meteo estiva relativamente fresca. Nonostante la lieve profondità di circa 2 m, lo stagno non si è mai mischiato completamente durante l’estate. Questo significa che l’acqua più fredda, al di sotto di 1 - 1.5 m non è mai venuta in contatto con l’atmosfera e quindi non ha potuto essere riempita di ossigeno. Generalmente gli eventi di mescolamento parziale delle acque (fino a circa 1.5 m di profondità) sono avvenuti a fine giungo e metà luglio, causati da una meteo fresca e dalla presenza di forti venti."
         }
+    },
+    "meiefallseeli": {
+        "name": "Meiefallseeli",
+        "lat": 47.040965,
+        "lng": 8.219020,
+        "location": [
+            "611'145 / 159'525"
+        ],
+        "area": [
+            "0.18",
+            "ha"
+        ],
+        "depth": [
+            "2.0",
+            "m"
+        ],
+        "elevation": [
+            "475",
+            "mü.M."
+        ],
+        "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/meiefallseeli.jpg",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/968?iframe&bafu&axis:[x,y2,y1]",
+        "heatmap": "https://www.datalakes-eawag.ch/datadetail/968?iframe&bafu&axis:[x,y,z]",
+        "text": {
+            "DE": "",
+            "EN": "",
+            "FR": "",
+            "IT": ""
+        }
     }
 }
