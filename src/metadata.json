@@ -205,21 +205,21 @@
     },
     "meiefallseeli": {
         "name": "Meiefallseeli",
-        "lat": 47.040965,
-        "lng": 8.219020,
+        "lat": 46.58687,
+        "lng": 7.58407,
         "location": [
             "611'145 / 159'525"
         ],
         "area": [
-            "0.18",
+            "NA",
             "ha"
         ],
         "depth": [
-            "2.0",
+            "NA",
             "m"
         ],
         "elevation": [
-            "475",
+            "1899",
             "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/meiefallseeli.jpg",
