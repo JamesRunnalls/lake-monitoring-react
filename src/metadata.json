@@ -211,11 +211,11 @@
             "611'145 / 159'525"
         ],
         "area": [
-            "NA",
+            "1.52",
             "ha"
         ],
         "depth": [
-            "NA",
+            "8",
             "m"
         ],
         "elevation": [
@@ -223,13 +223,13 @@
             "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/meiefallseeli.jpg",
-        "linegraph": "https://www.datalakes-eawag.ch/datadetail/968?iframe&bafu&axis:[x,y2,y1]",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/968?iframe&bafu&axis:[x,y1]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/968?iframe&bafu&axis:[x,y,z]",
         "text": {
-            "DE": "",
-            "EN": "",
-            "FR": "",
-            "IT": ""
+            "DE": "Text wird folgen",
+            "EN": "Text will follow",
+            "FR": "Le texte va suivre",
+            "IT": "Seguirà il testo"
         }
     }
 }
