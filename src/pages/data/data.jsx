@@ -171,12 +171,12 @@ class Data extends Component {
               </table>
               <div id="map" />
               <img
-                className="info-photo"
+                className="info-photo hide-mobile"
                 src={metadata[name]["photo"]}
                 alt="Lake"
               />
             </div>
-            <div className="info-box">
+            <div className="info-box hide-mobile">
               <div className="contact">
                 <div className="contact-icon">
                   <img src={phone} alt="Phone" />
@@ -276,6 +276,30 @@ class Data extends Component {
                 </div>
               </div>
             )}
+            <div className="info-box show-mobile">
+              <div className="contact">
+                <div className="contact-icon">
+                  <img src={phone} alt="Phone" />
+                </div>
+                <div className="contact-text">
+                  <div className="name">Fabian Bärenbold</div>
+                  <div className="job">{text[lang].job1}</div>
+                  <div className="phone">+41 58 765 21 77</div>
+                  <div className="email">fabian.baerenbold@eawag.ch</div>
+                </div>
+              </div>
+              <div className="contact">
+                <div className="contact-icon">
+                  <img src={phone} alt="Phone" />
+                </div>
+                <div className="contact-text">
+                  <div className="name">Michael Plüss</div>
+                  <div className="job">{text[lang].job2}</div>
+                  <div className="phone">+41 58 765 22 55</div>
+                  <div className="email">michael.pluess@eawag.ch</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       );

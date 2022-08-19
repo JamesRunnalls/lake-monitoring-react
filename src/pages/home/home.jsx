@@ -14,12 +14,13 @@ class Home extends Component {
         intro: (
           <div>
             <p>
-              Das Wasserforschungsinstitut Eawag betreibt im Auftrag des Bundesamt für Umwelt (BAFU) von 2021 bis 2023
-              Pilot-Stationen für Temperaturmessungen in verschiedenen Schweizer
-              Kleinseen. Die Messketten bestehen aus einem Metallgewicht am
-              Grund, einer Boje an der Wasseroberfläche und Sensoren in
-              verschiedenen Wassertiefen. Die Temperaturdaten werden zweimal pro
-              Jahr manuell ausgelesen und auf der Webseite aufgeschaltet.
+              Das Wasserforschungsinstitut Eawag betreibt im Auftrag des
+              Bundesamt für Umwelt (BAFU) von 2021 bis 2023 Pilot-Stationen für
+              Temperaturmessungen in verschiedenen Schweizer Kleinseen. Die
+              Messketten bestehen aus einem Metallgewicht am Grund, einer Boje
+              an der Wasseroberfläche und Sensoren in verschiedenen
+              Wassertiefen. Die Temperaturdaten werden zweimal pro Jahr manuell
+              ausgelesen und auf der Webseite aufgeschaltet.
             </p>
             <p>
               Ziel der Messungen ist es, die Eignung der Sensoren sowie der
@@ -36,8 +37,7 @@ class Home extends Component {
         operator: "Betreiber",
         client: "Auftraggeber",
         contact: "Kontakt",
-        eawag:
-          "Eawag: Das Wasserforschungsinstitut des ETH-Bereichs",
+        eawag: "Eawag: Das Wasserforschungsinstitut des ETH-Bereichs",
         bafu: "Bundesamt für Umwelt (BAFU)",
       },
       EN: {
@@ -80,15 +80,21 @@ class Home extends Component {
         intro: (
           <div>
             <p>
-              L'istituto di ricerca sull'acqua Eawag, per conto dell'Ufficio federale dell'ambiente (UFAM), 
-              opera con stazioni pilota dedicate a misurazioni della temperatura in vari piccoli laghi svizzeri per un periodo che va dal 2021 al 2023. 
-              Le catene di misurazione sono costituite da un peso in metallo posizionato sul fondo, da una boa sulla superficie dell'acqua e da sensori a diverse profondità. 
-              La raccolta dati della temperatura viene effettuata due volte all’anno, in seguito la base dati viene aggiunta a questo sito.
-
+              L'istituto di ricerca sull'acqua Eawag, per conto dell'Ufficio
+              federale dell'ambiente (UFAM), opera con stazioni pilota dedicate
+              a misurazioni della temperatura in vari piccoli laghi svizzeri per
+              un periodo che va dal 2021 al 2023. Le catene di misurazione sono
+              costituite da un peso in metallo posizionato sul fondo, da una boa
+              sulla superficie dell'acqua e da sensori a diverse profondità. La
+              raccolta dati della temperatura viene effettuata due volte
+              all’anno, in seguito la base dati viene aggiunta a questo sito.
             </p>
             <p>
-              Lo scopo delle misurazioni è di verificare l'adeguatezza dei sensori e l'installazione al fine di poter osservare in futuro le dinamiche della temperatura, 
-              legate al clima, in stagni e piccoli laghi. I risultati servono a fare luce sullo sviluppo di una rete di misurazioni della temperatura nei laghi, su scala nazionale. 
+              Lo scopo delle misurazioni è di verificare l'adeguatezza dei
+              sensori e l'installazione al fine di poter osservare in futuro le
+              dinamiche della temperatura, legate al clima, in stagni e piccoli
+              laghi. I risultati servono a fare luce sullo sviluppo di una rete
+              di misurazioni della temperatura nei laghi, su scala nazionale.
             </p>
           </div>
         ),
@@ -109,19 +115,21 @@ class Home extends Component {
         intro: (
           <div>
             <p>
-              Dans le cadre d'un projet pour l'office fédérale de l'environnement (OFEV), l'institut de recherche sur l'eau Eawag exploitera des stations
-              pilotes pour des mesures de température dans divers petits lacs
-              suisses de 2021 à 2023. Les chaînes de mesure sont constituées
-              d'un poids métallique en bas, une bouée à la surface de l'eau et
-              des capteurs à différentes profondeurs. Les données de température
-              sont téléchargées manuellement deux fois par an et seront ensuite
-              ajoutées à ce site Web.
+              Dans le cadre d'un projet pour l'office fédérale de
+              l'environnement (OFEV), l'institut de recherche sur l'eau Eawag
+              exploitera des stations pilotes pour des mesures de température
+              dans divers petits lacs suisses de 2021 à 2023. Les chaînes de
+              mesure sont constituées d'un poids métallique en bas, une bouée à
+              la surface de l'eau et des capteurs à différentes profondeurs. Les
+              données de température sont téléchargées manuellement deux fois
+              par an et seront ensuite ajoutées à ce site Web.
             </p>
             <p>
-              Le but des mesures est de tester ces installations pour quantifier les effets du climat
-              sur la dynamique de la température des petits lacs et étangs. Les résultats serviront
-              au futur développement d'un réseau de mesure de la température des
-              lacs dans toute la Suisse.
+              Le but des mesures est de tester ces installations pour quantifier
+              les effets du climat sur la dynamique de la température des petits
+              lacs et étangs. Les résultats serviront au futur développement
+              d'un réseau de mesure de la température des lacs dans toute la
+              Suisse.
             </p>
           </div>
         ),
@@ -250,60 +258,62 @@ class Home extends Component {
     return (
       <div className="home">
         <div className="content">
-          <div className="title">
-            {text[lang].title}
-            <div className="subtitle">{text[lang].subtitle}</div>
-          </div>
-          <div className="select">
-            <List
-              items={items}
-              onMouseOver={this.onMouseOver}
-              onMouseOut={this.onMouseOut}
-            />
-          </div>
-          <div className="text">{text[lang].intro}</div>
-          <div className="people">
-            <table>
-              <tbody>
-                <tr>
-                  <th>{text[lang].operator}</th>
-                  <td>{text[lang].eawag}</td>
-                </tr>
-                <tr>
-                  <th>{text[lang].client}</th>
-                  <td>{text[lang].bafu}</td>
-                </tr>
-                <tr>
-                  <th>{text[lang].contact}</th>
-                  <td>
-                    <div className="person">
-                      <div className="job">{text[lang].job1}</div>
-                      <div className="name">Fabian Bärenbold</div>
-                      <div className="no">058 765 21 77</div>
-                      <div className="email">fabian.baerenbold@eawag.ch</div>
-                    </div>
+          <div className="content-inner">
+            <div className="title">
+              {text[lang].title}
+              <div className="subtitle">{text[lang].subtitle}</div>
+            </div>
+            <div className="select">
+              <List
+                items={items}
+                onMouseOver={this.onMouseOver}
+                onMouseOut={this.onMouseOut}
+              />
+            </div>
+            <div className="text">{text[lang].intro}</div>
+            <div className="people">
+              <table>
+                <tbody>
+                  <tr>
+                    <th>{text[lang].operator}</th>
+                    <td>{text[lang].eawag}</td>
+                  </tr>
+                  <tr>
+                    <th>{text[lang].client}</th>
+                    <td>{text[lang].bafu}</td>
+                  </tr>
+                  <tr>
+                    <th>{text[lang].contact}</th>
+                    <td>
+                      <div className="person">
+                        <div className="job">{text[lang].job1}</div>
+                        <div className="name">Fabian Bärenbold</div>
+                        <div className="no">058 765 21 77</div>
+                        <div className="email">fabian.baerenbold@eawag.ch</div>
+                      </div>
 
-                    <div className="person">
-                      <div className="job">{text[lang].job2}</div>
-                      <div className="name">Michael Plüss</div>
-                      <div className="no">058 765 22 55</div>
-                      <div className="email">michael.pluess@eawag.ch</div>
-                    </div>
-                    <div className="person">
-                      <div className="job">{text[lang].job3}</div>
-                      <div className="name">Martin Schmid</div>
-                      <div className="no">058 765 21 93</div>
-                      <div className="email">martin.schmid@eawag.ch</div>
-                    </div>
-                    <div className="person">
-                      <div className="name">Damien Bouffard</div>
-                      <div className="no">058 765 22 73</div>
-                      <div className="email">damien.bouffard@eawag.ch</div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                      <div className="person">
+                        <div className="job">{text[lang].job2}</div>
+                        <div className="name">Michael Plüss</div>
+                        <div className="no">058 765 22 55</div>
+                        <div className="email">michael.pluess@eawag.ch</div>
+                      </div>
+                      <div className="person">
+                        <div className="job">{text[lang].job3}</div>
+                        <div className="name">Martin Schmid</div>
+                        <div className="no">058 765 21 93</div>
+                        <div className="email">martin.schmid@eawag.ch</div>
+                      </div>
+                      <div className="person">
+                        <div className="name">Damien Bouffard</div>
+                        <div className="no">058 765 22 73</div>
+                        <div className="email">damien.bouffard@eawag.ch</div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         <div id="map" />
