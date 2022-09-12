@@ -258,6 +258,8 @@ class Data extends Component {
               <div className="info-box">
                 <div className="info-box-header">
                   {text[lang].oxygen}
+                  {"oxygen-depth" in metadata[name] &&
+                    ` (${metadata[name]["oxygen-depth"]})`}
                   <a
                     href={this.extractLink(metadata[name]["oxygen"])}
                     target="_blank"
