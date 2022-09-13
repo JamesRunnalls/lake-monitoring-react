@@ -23,3 +23,10 @@
   border-color: #54d1db;
   color: #54d1db;
 }
+
+.react-list .react-list-inner.hover {
+  text-shadow: 0px 0px 1px #54d1db;
+  border-color: #54d1db;
+  color: #54d1db;
+}
+

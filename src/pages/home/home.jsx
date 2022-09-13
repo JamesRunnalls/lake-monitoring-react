@@ -168,10 +168,33 @@ class Home extends Component {
             `</div> `,
         }),
       }).addTo(this.markers);
-      marker.bindTooltip(metadata[lake].name);
       marker.on("click", (event) => {
         window.location.href =
           `/${lang.toLowerCase()}/data?` + event.target.options.id;
+      });
+      marker.on("mouseover", (event) => {
+        try {
+          document.getElementById(
+            "pin-" + event.target.options.id
+          ).style.backgroundColor = "#54D1DB";
+        } catch (e) {}
+        try {
+          document
+            .getElementById("list-" + event.target.options.id)
+            .classList.add("hover");
+        } catch (e) {}
+      });
+      marker.on("mouseout", (event) => {
+        try {
+          document.getElementById(
+            "pin-" + event.target.options.id
+          ).style.backgroundColor = "#044E54";
+        } catch (e) {}
+        try {
+          document
+            .getElementById("list-" + event.target.options.id)
+            .classList.remove("hover");
+        } catch (e) {}
       });
     }
   };
