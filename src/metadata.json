@@ -111,6 +111,7 @@
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/stockseewli.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/856?iframe&bafu&axis:[x,y2,y1]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/856?iframe&bafu&axis:[x,y,z]",
+        "oxygen": "https://www.datalakes-eawag.ch/datadetail/1054?iframe&bafu&axis:[x,y,z1]",
         "text": {
             "DE": "In der bisherigen Messperiode (Juli bis September 2021) erreichte das Stockseewli aufgrund der eher niedrigen Sommertemperaturen nie eine Temperatur von über 15°C. Trotz der geringen Tiefe besteht im Stockseewli auch im Sommer meist eine gewisse Schichtung mit wärmerem, leichterem Wasser an der Oberfläche und leicht kühlerem am Grund. Grössere Mischereignisse fanden Ende August und Mitte September statt.",
             "EN": "In the previous measurement period (July to September 2021), the Stockseewli never reached a temperature of over 15°C due to the rather low summer temperatures. Despite the shallow depth, there is usually a certain layering in the Stockseewli, with warmer, lighter water on the surface and slightly cooler water on the bottom, even in summer. Larger mixing events took place in late August and mid-September.",
