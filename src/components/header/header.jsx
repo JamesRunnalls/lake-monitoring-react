@@ -10,13 +10,27 @@ class Header extends Component {
       <div className="header">
         <div className="header-content">
           <div className="header-logos">
-            <img src={eawag} alt="eawag" />
-            <img src={bafu} alt="bafu"/>
+            <a
+              href="https://www.eawag.ch/en/department/surf/projects/temperature-monitoring-of-swiss-lakes"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={eawag} alt="eawag" />
+            </a>
+            <a
+              href="https://www.bafu.admin.ch/bafu/de/home/themen/wasser/fachinformationen/zustand-der-gewaesser/zustand-der-seen/wassertemperatur-seen.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={bafu} alt="bafu" />
+            </a>
           </div>
           <div className="header-lang">
             <select value={lang} onChange={updateLangs}>
               {langs.map((l) => (
-                <option key={l} value={l}>{l}</option>
+                <option key={l} value={l}>
+                  {l}
+                </option>
               ))}
             </select>
           </div>

@@ -51,7 +51,8 @@
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/geistsee.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/842?iframe&bafu&axis:[x,y2,y1]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/842?iframe&bafu&axis:[x,y,z]",
-        "oxygen": "https://www.datalakes-eawag.ch/datadetail/1051?iframe&bafu&axis:[x,y,z1]",
+        "oxygen": "https://www.datalakes-eawag.ch/datadetail/1051?iframe&bafu&axis:[x,y]",
+        "oxygen-depth": "5.0m",
         "text": {
             "DE": "In der bisherigen Messperiode (April bis September 2021) erreichte der Geistsee die Maximaltemperatur von ungefähr 26 °C Mitte Juni. Danach waren die Temperaturen aufgrund des wechselhaften und überaus regenreichen Sommers nicht mehr ganz so hoch. Der Geistsee war trotz seiner geringen Tiefe den ganzen Sommer 2021 stabil geschichtet, d.h. das Wasser unterhalb von etwa 3-4 m mischt nicht mit dem Oberflächenwasser und bleibt kühl. Das stärkste Mischereignis gab es vom 12.-13. Juli und wurde durch einem starken Sturm ausgelöst wurde.",
             "EN": "In the previous measurement period (April to September 2021), the Geistsee reached its maximum temperature of around 26 °C in mid-June. After that, the temperatures were not quite as high due to the changeable and extremely rainy summer. Despite its shallow depth, the Geistsee was stratified throughout the summer of 2021, i.e. the water below about 3-4 m does not mix with the surface water and remains cool. The strongest mixing event occured from 12.-13. July and was triggered by a strong storm.",
@@ -81,7 +82,8 @@
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/lenkerseeli.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/844?iframe&bafu&axis:[x,y2,y1]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/844?iframe&bafu&axis:[x,y,z]",
-        "oxygen": "https://www.datalakes-eawag.ch/datadetail/1050?iframe&bafu&axis:[x,y,z1]",
+        "oxygen": "https://www.datalakes-eawag.ch/datadetail/1050?iframe&bafu&axis:[x,y]",
+        "oxygen-depth": "1.6m",
         "text": {
             "DE": "Die Oberflächentemperatur des Lenkerseelis erreichte Mitte Juni ihr Maximum von ungefähr 20 °C. Im Juli und August blieben die Temperaturen wegen des eher durchzogenen Sommerwetters eher im Bereich von 10 – 15 °C. Trotz der geringen Tiefe ist das Lenkerseeli ab Anfang Juni bis mindestens Ende August durchgehend stabil geschichtet. Das wärmere Wasser befindet sich oben und das kältere, schwerere unten. Dies bedeutet, dass der Sauerstoffgehalt im unteren Teils des Lenkerseelis wohl über den Sommer stark abnimmt. Messungen dazu werden aber erst nächstes Jahr vorhanden sein.",
             "EN": "The surface temperature of the Lenkerseeli reached its maximum of around 20 °C in mid-June. In July and August, the temperatures tended to stay in the range of 10 – 15 °C due to the rather mixed summer weather. Despite the shallow depth, the Lenkerseeli is stratified from the beginning of June until at least the end of August. The warmer water is at the top and the colder, heavier water is at the bottom. This means that the oxygen content in the lower part of the Lenkerseeli probably decreases significantly over the summer. However, measurements on this will not be available until next year.",
@@ -111,7 +113,8 @@
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/stockseewli.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/856?iframe&bafu&axis:[x,y2,y1]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/856?iframe&bafu&axis:[x,y,z]",
-        "oxygen": "https://www.datalakes-eawag.ch/datadetail/1054?iframe&bafu&axis:[x,y,z1]",
+        "oxygen": "https://www.datalakes-eawag.ch/datadetail/1054?iframe&bafu&axis:[x,y]",
+        "oxygen-depth": "1.7m",
         "text": {
             "DE": "In der bisherigen Messperiode (Juli bis September 2021) erreichte das Stockseewli aufgrund der eher niedrigen Sommertemperaturen nie eine Temperatur von über 15°C. Trotz der geringen Tiefe besteht im Stockseewli auch im Sommer meist eine gewisse Schichtung mit wärmerem, leichterem Wasser an der Oberfläche und leicht kühlerem am Grund. Grössere Mischereignisse fanden Ende August und Mitte September statt.",
             "EN": "In the previous measurement period (July to September 2021), the Stockseewli never reached a temperature of over 15°C due to the rather low summer temperatures. Despite the shallow depth, there is usually a certain layering in the Stockseewli, with warmer, lighter water on the surface and slightly cooler water on the bottom, even in summer. Larger mixing events took place in late August and mid-September.",
@@ -141,7 +144,8 @@
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/oberesbanzlauiseeli.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/845?iframe&bafu&axis:[x,y2,y1]",
         "heatmap": "https://www.datalakes-eawag.ch/datadetail/845?iframe&bafu&axis:[x,y,z]",
-        "oxygen": "https://www.datalakes-eawag.ch/datadetail/1053?iframe&bafu&axis:[x,y,z1]",
+        "oxygen": "https://www.datalakes-eawag.ch/datadetail/1053?iframe&bafu&axis:[x,y]",
+        "oxygen-depth": "6.0m",
         "text": {
             "DE": "Bei der Einsetzung der Messkette war das Seeli noch grösstenteils mit Schnee und Eis bedeckt und die Temperaturschichtung daher invers. Bis Ende August erreichte die Temperatur dann Maximalwerte von bis zu 15 °C. Wohl aufgrund des sehr klaren Wassers, welches der Sonnenstrahlung erlaubt bis an den Seegrund vorzudringen, mischt das obere Bänzlauiseeli auch im Sommer regelmässig bis an den Grund.",
             "EN": "When the measuring chain was installed, the Seeli was still mostly covered with snow and ice and the temperature stratification was therefore inverse. By the end of August, the temperature then reached maximum values of up to 15 °C. Probably due to the very clear water, which allows the sun's rays to penetrate to the bottom of the lake, the upper Bänzlauiseeli regularly mixes down to the bottom even in summer.",
@@ -227,9 +231,9 @@
             "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/meiefallseeli.jpg",
-        "linegraph": "https://www.datalakes-eawag.ch/datadetail/968?iframe&bafu&axis:[x,y1]",
-        "heatmap": "https://www.datalakes-eawag.ch/datadetail/968?iframe&bafu&axis:[x,y,z]",
-        "oxygen": "https://www.datalakes-eawag.ch/datadetail/1052?iframe&bafu&axis:[x,y,z1]",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/970?iframe&bafu&axis:[x,y1,y]",
+        "oxygen": "https://www.datalakes-eawag.ch/datadetail/1052?iframe&bafu&axis:[x,y]",
+        "oxygen-depth": "3.0m",
         "text": {
             "DE": "Text wird folgen",
             "EN": "Text will follow",
