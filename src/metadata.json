@@ -233,7 +233,7 @@
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/meiefallseeli.jpg",
         "linegraph": "https://www.datalakes-eawag.ch/datadetail/970?iframe&bafu&axis:[x,y1,y]",
         "oxygen": "https://www.datalakes-eawag.ch/datadetail/1052?iframe&bafu&axis:[x,y]",
-        "oxygen-depth": "3.0m",
+        "oxygen-depth": "5.0m",
         "text": {
             "DE": "Das auf knapp 1900 Meter über Meereshöhe gelegene Meiefallseeli hat im Sommer 2021 Höchsttemperaturen von knapp über 15 und 2022 über 20 °C erreicht. Auch die Grundtemperatur war im wärmeren Sommer 2022 wesentlich höher als im Vorjahr. Während das Seeli im Sommer 2021 öfter bis an den Grund durchgemischt hat, trat dies im Sommer 2021 seltener auf. Im Winter ist das Meiefallseeli laut Satellitenbildern durchgehend eisbedeckt. Der Sauerstoffsensor zeigt, dass dann das Tiefenwasser des Seelis sauerstofffrei wird aufgrund der fehlenden Durchmischung (Durchmischung bringt Sauerstoff von der Oberfläche in die Tiefe). Am 28. Dezember zeigt der Sauerstoffsensor jedoch an, dass Sauerstoff bis ins Tiefenwasser gelangte. Da das Seeli zu diesem Zeitpunkt eisbedeckt war, ist dieses Ereignis nicht ganz einfach zu erklären. In den Temperaturdaten zeigt sich eine kurze Abkühlung der Grundtemperatur. Daten einer regionalen Wetterstation zeigend darüberhinaus, dass in den Tagen vor dem Ereignis Schnee fiel und dass am Tag selbst die Lufttemperatur auf über 5 °C anstieg. Es könnte sich also eine Lawine gelöst und Schnee und Luft ins Tiefenwasser transportiert haben  . Eine weitere Möglichkeit ist, dass das Mischereignis durch die starken Regenfälle am 28. Dezember ausgelöst wurde.",
             "EN": "",
