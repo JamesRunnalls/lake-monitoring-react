@@ -231,7 +231,8 @@
             "mü.M."
         ],
         "photo": "https://eawag-applied-system-analysis.s3.eu-central-1.amazonaws.com/lake-monitoring/img/meiefallseeli.jpg",
-        "linegraph": "https://www.datalakes-eawag.ch/datadetail/970?iframe&bafu&axis:[x,y1,y]",
+        "linegraph": "https://www.datalakes-eawag.ch/datadetail/970?iframe&bafu&axis:[x,y2,y1]",
+        "heatmap": "https://www.datalakes-eawag.ch/datadetail/970?iframe&bafu&axis:[x,y,z]",
         "oxygen": "https://www.datalakes-eawag.ch/datadetail/1052?iframe&bafu&axis:[x,y]",
         "oxygen-depth": "5.0m",
         "text": {
