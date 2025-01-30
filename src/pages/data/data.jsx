@@ -206,14 +206,12 @@ class Data extends Component {
               <div className="info-box">
                 <div className="info-box-header">{text[lang].interp}</div>
                 <div className="info-box-content">
-                  <div className="text">
-                    {metadata[name]["text"][lang].split("<br>").map((p) => (
-                      <React.Fragment key={p}>
-                        {p}
-                        <br />
-                      </React.Fragment>
-                    ))}
-                  </div>
+                  <div
+                    className="text"
+                    dangerouslySetInnerHTML={{
+                      __html: metadata[name]["text"][lang],
+                    }}
+                  ></div>
                 </div>
               </div>
             )}
